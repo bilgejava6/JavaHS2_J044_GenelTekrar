@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class Runner_Degiskenler_Zor {
     public static void main(String[] args) {
         cevap7();
+        DegiskenFarkliliklari degisken = new DegiskenFarkliliklari();
         System.out.println(DegiskenFarkliliklari.y);
-        System.out.println(DegiskenFarkliliklari.x);
+       // System.out.println(DegiskenFarkliliklari.x);
+        System.out.println(degisken.x);
     }
     private static void cevap1(String str){
         try{
