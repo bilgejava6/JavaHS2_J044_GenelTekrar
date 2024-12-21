@@ -133,7 +133,7 @@ public class Zor {
                 """);
 
         //6.	Kullanıcıdan iki sayı alarak bu sayıların değişken türlerinin eşleşip eşleşmediğini kontrol edin. Eşleşiyorsa toplamlarını yazdırın.
-
+        // TODO: instanceOf kullanımını araştıralım, iki değerin DataType larının aynı olup olmadığı nasıl anlaşılır?
         //7.	Bir tamsayı değişkeni tanımlayın ve bu değişkeni bir String değişkene dönüştürün. Bu işlemi iki farklı yöntemle yapın.
 
         int sayi5 = 123;
