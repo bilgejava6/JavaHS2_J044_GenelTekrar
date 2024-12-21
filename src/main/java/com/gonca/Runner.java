@@ -15,6 +15,7 @@ public class Runner {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int sayi = 10;
         System.out.println(sayi);
 
