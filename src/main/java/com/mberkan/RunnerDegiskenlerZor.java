@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class RunnerDegiskenlerZor {
     public static void main(String[] args) {
     cevap6();
+    cevap4();
     }
     public static void cevap1(){
         System.out.println("Lutfen bir String girisi yapiniz");
