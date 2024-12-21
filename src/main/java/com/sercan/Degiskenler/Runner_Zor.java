@@ -38,7 +38,9 @@ public class Runner_Zor {
 
     }
 
-    public static void cevap3(){}
+    public static void cevap3(){
+        // TODO: Bunu yapalım.
+    }
 
     public static void cevap4(){
         int sayi=-5;
