@@ -1,6 +1,4 @@
-package com.elifcan;
+package com.onur;
 
 public class Runner {
-
-
 }

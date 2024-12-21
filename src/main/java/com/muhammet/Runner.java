@@ -3,6 +3,8 @@ package com.muhammet;
 public class Runner {
     public static void main(String[] args) {
         /**
+         * Muhammet HOCA
+         *
          * ** DEĞİŞKENLER
          * -- Kolay
          * 	1.	Bir tamsayı değişkeni oluşturun ve ona 10 değerini atayın. Bu değişkeni ekrana yazdırın.
