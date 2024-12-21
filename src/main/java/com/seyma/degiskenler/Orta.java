@@ -49,8 +49,8 @@ public class Orta {
 
 
     public static void soru2() {
-        int fnal = 100;
-        System.out.println("Final değeri"+fnal);
+        final int sayi = 100;
+        System.out.println("Final değeri..:"+sayi);
 
 
 
