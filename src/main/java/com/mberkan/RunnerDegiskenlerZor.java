@@ -19,7 +19,7 @@ public class RunnerDegiskenlerZor {
 
         }
 
-        public class cevap2{
+        class cevap2{
         int intdegisken = 1;
         float floatdegisken = 2;
         double doubledegisken = 3;
