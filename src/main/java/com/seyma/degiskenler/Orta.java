@@ -118,6 +118,7 @@ public class Orta {
         System.out.println("Int feğeri"+i);
         //short inte sığdığı için hata vermedi
 
+
     }
 
 
