@@ -1,5 +1,7 @@
 package com.bekircan.degiskenler;
 
+import java.util.Scanner;
+
 /**
  *          * 	-- ZOR
  *          * 	1.	Kullanıcıdan bir String girişi alın ve bunun bir tamsayı olup olmadığını kontrol edin. Eğer tamsayıysa ekrana dönüştürülmüş değerini yazdırın.
@@ -16,9 +18,76 @@ package com.bekircan.degiskenler;
 
 public class Runner_Degiskenler_Zor {
     public static void main(String[] args) {
-        // Kullanıcıdan bir String girişi alın ve bunun bir tamsayı olup olmadığını kontrol edin. Eğer tamsayıysa ekrana dönüştürülmüş değerini yazdırın.
+        // soru 1 Kullanıcıdan bir String girişi alın ve bunun bir tamsayı olup olmadığını kontrol edin. Eğer tamsayıysa ekrana dönüştürülmüş değerini yazdırın.
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("Lütfen bir değer giriniz: ");
+        String deger1 =  sc.nextLine();
+
+        try {
+            int number =Integer.parseInt(deger1);
+            System.out.println("Sayı girdiniz. " + number);
+
+        }catch (Exception e){
+            System.out.println("Girdiginiz değer integer degildir.");
+        }
     }
 
+
+        // soru 2 int, float, double, ve char türlerini kapsayacak şekilde bir sınıf oluşturun. Her türde değişkenler için setter ve getter metotları yazın.
+ public class veriTipleri {
+
+            private int intDeger;
+            private float floatDeger;
+            private double doubleDeger;
+            private char charDeger;
+
+            // get set
+            // int
+            public int getIntDeger(){
+                return intDeger;
+            }
+            public void setIntDeger(int intDeger){
+                this.intDeger = intDeger;
+            }
+            //float
+            public float getFloatDeger(){
+                return floatDeger;
+            }
+            public void setFloatDeger(float floatDeger){
+                this.floatDeger = floatDeger;
+            }
+            // double
+            public double getDoubleDeger(double doubleDeger){
+                return doubleDeger;
+            }
+            public void setDoubleDeger(){
+                this.doubleDeger=doubleDeger;
+            }
+            // char
+            public char getCharDeger(){
+                return charDeger;
+            }
+            public void setCharDeger(char charDeger){
+                this.charDeger=charDeger;
+            }
+
+            public static void main(String[] args) {
+                veriTipleri veri = new veriTipleri();
+
+                // Değerleri ayarla
+                veri.setIntDeger(100);
+                veri.setFloatDeger(3.14f);
+                veri.setDoubleDeger(123.456);
+                veri.setCharDeger('A');
+
+                // Değerleri yazdır
+                System.out.println("int değer: " + veri.getIntDeger());
+                System.out.println("float değer: " + veri.getFloatDeger());
+                System.out.println("double değer: " + veri.getDoubleDeger());
+                System.out.println("char değer: " + veri.getCharDeger());
+            }
+
+    }
 
 }
