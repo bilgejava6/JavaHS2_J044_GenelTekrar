@@ -7,7 +7,7 @@ public class Runner {
 
     public  static boolean eslesiyorMu(String deger)
     {
-
+//Değişkenler kontrol edildi.
         Integer.parseInt(deger);
         return true;
 
