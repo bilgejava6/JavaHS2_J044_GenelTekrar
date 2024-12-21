@@ -194,6 +194,105 @@ public class Runner1 {
         }
         System.out.println("Yeni Cümle: " + yeniCumle.toString().trim());
 
+       /*
+
+
+         * 	7.	Bir String’in anagram olup olmadığını kontrol eden bir kod yazın.
+                * 	8.	Kullanıcıdan bir kelime alın ve kelimenin tüm olası permütasyonlarını konsola yazdırın.
+                * 	9.	Kullanıcıdan bir cümle alın ve bu cümledeki kelimelerin uzunluğuna göre sıralama yapan bir program yazın.
+                * 	10.	Kullanıcıdan iki metin alın ve ilk metnin ikinci metnin içinde kaç kez geçtiğini bulan bir kod yazın.*/
+
+        System.out.println("SORU CEVAP 1");
+
+        //Kullanıcıdan bir String alın ve içindeki kelimelerin sırasını ters çevirerek konsola yazdırın.
+
+        System.out.print("Bir cümle girin: ");
+        String cumle3 = sc.nextLine();
+        String tersinden="";
+        for(int i=cumle3.length()-1;i>=0;i++)
+        {
+            tersinden+=cumle3.charAt(i);
+        }
+        System.out.println(tersinden);
+
+        System.out.println(" SORU CEVAP 2 ");
+       // Kullanıcıdan bir cümle alarak her kelimenin karakterlerini ters çeviren bir program yazın.
+
+        System.out.print("Bir cümle girin: ");
+        String cumle4 = sc.nextLine();
+        String tersin="";
+        String sonuc="";
+
+        String[] yenidiz=cumle4.split(" ");
+        for(int i=0;i<yenidiz.length;i++)
+        {
+            String kelimes=yenidiz[i];
+
+            for(int j=kelimes.length()-1;j>=0;j++)
+            {
+                tersin+= kelimes.charAt(j);
+            }
+            sonuc+= tersin;
+        }
+
+        System.out.println(sonuc);
+
+        System.out.println( "soru cevap 3");
+        // “Merhaba Dünya” metnindeki tüm harflerin ASCII değerlerini ekrana yazdıran bir kod yazın.
+
+        String metin8 = "Merhaba Dünya";
+
+        // Metindeki her harfin ASCII değerini yazdır
+        for (int i = 0; i < metin8.length(); i++) {
+            char harf = metin8.charAt(i);
+            int asciiDegeri = (int) harf; // Karakterin ASCII değerini al
+            System.out.println("Karakter: " + harf + " - ASCII Değeri: " + asciiDegeri);
+        }
+
+        System.out.println( "SORU CEVAP 4");
+
+        //Kullanıcıdan bir cümle alın ve cümledeki en uzun kelimeyi ekrana yazdırın.
+        System.out.print("Bir cümle girin: ");
+        String cumle8 = sc.nextLine();
+        String[] kelimelerl = cumle.split(" ");
+
+        // En uzun kelimeyi bul
+        String enUzunKelime = "";
+        for (String kelimen : kelimelerl) {
+            if (kelimen.length() > enUzunKelime.length()) {
+                enUzunKelime = kelime;
+            }
+        }
+
+        System.out.println("Cümledeki en uzun kelime: " + enUzunKelime);
+
+        System.out.println( "SORU CEVAP 5");
+
+        //Kullanıcıdan bir String alın ve bu metni şifrelemek için her
+        // harfi alfabede 3 karakter öteye taşıyan bir program yazın.
+
+        System.out.print("Bir cümle girin: ");
+        String  ifades = sc.nextLine();
+        for(int i=0;i<ifades.length();i++)
+        {
+           int k =(int) ifades.charAt(i);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
