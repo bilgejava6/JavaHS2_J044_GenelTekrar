@@ -15,6 +15,7 @@ public class Kolay {
          *      9.	Bir float değişken oluşturun ve 2.5 değerini atayın. Bu değeri ekrana yazdırın.
          *      10.	byte türünde bir değişken tanımlayıp 127 değeri verin. Daha büyük bir değer atarsanız ne olur?
          *
+         *
          */
 
 

@@ -18,6 +18,7 @@ public class Orta {
          *  9.	Bir short değişken oluşturup bir int değişkenine atayın. Bu işlem sırasında bir hata alır mısınız?
          *
          *
+         *
          */
 
         soru1();
