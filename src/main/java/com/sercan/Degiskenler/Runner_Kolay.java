@@ -90,8 +90,10 @@ public class Runner_Kolay {
                 8. sorunun cevabı
                 """);
         int  k;
-        System.out.println("variable k might not have been initialized");
-        System.out.println("değer atanmadığı için başlatılamadığını ifade ediyor");
+       /** variable k might not have been initialized
+        değer atanmadığı için başlatılamadığını ifade ediyor
+
+        */
         System.out.println("-------------------------------------------------");
     }
 

@@ -1,5 +1,7 @@
 package com.sercan.Degiskenler;
 
+import java.util.Scanner;
+
 public class Runner_Zor {
     public static void main(String[] args) {
         /**
@@ -18,4 +20,14 @@ public class Runner_Zor {
 
 
     }
+
+
+
+
 }
+
+
+
+
+
+
