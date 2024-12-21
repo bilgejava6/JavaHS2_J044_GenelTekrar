@@ -25,7 +25,9 @@ public class Kolay {
         soru6();
         soru7();
         soru8();
-        
+        soru9();
+        soru10();
+
 
 
     }
@@ -77,6 +79,12 @@ public class Kolay {
     }
 
     public static void soru7() {
+        String metin ="Deneme";
+        if (metin.isEmpty()) {
+            System.out.println("String boştur");
+        }else {
+            System.out.println("String boş değil ");
+        }
 
     }
 
@@ -85,6 +93,25 @@ public class Kolay {
         String  kelime5= kelime4.replaceAll(" ","");
         System.out.println(kelime5);
 
+
+    }
+
+    public static void soru9() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir metin giriniz..:");
+        String kelimeee = scanner.nextLine();
+        if (kelimeee.contains("a")) {
+            System.out.println("A harfi var");
+        }else
+            System.out.println("A harfi yok");
+
+
+    }
+
+    public static void soru10() {
+        String a ="Hello";
+        String b ="World";
+        System.out.println(a.concat(b));
 
     }
 
