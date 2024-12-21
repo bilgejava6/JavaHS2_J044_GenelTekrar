@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class RunnerDegiskenlerZor {
     public static void main(String[] args) {
     cevap10();
+     Cevap8 cv = new Cevap8();
     }
     public static void cevap1(){
         System.out.println("Lutfen bir String girisi yapiniz");
@@ -104,20 +105,6 @@ public class RunnerDegiskenlerZor {
         String sayi1 = String.valueOf((int)sayi);
         System.out.println(sayi1);
         }
-        class cevap8{
-            public static void main(String[] args) {
-                staticOrnek();
-                // noStatic methodu main methodda çalismaz.
-
-
-            }
-            public static void staticOrnek(){
-                System.out.println("Gitti");
-            }
-            public void noStatic(){
-                System.out.println("geldi");
-            }
-        }
         public static void cevap9(){
             int sayi=1;
             sayi += 50;
@@ -133,4 +120,18 @@ public class RunnerDegiskenlerZor {
             System.out.println(ifade);
         }
 
+}
+class Cevap8{
+    public static void main(String[] args) {
+        staticOrnek();
+        // noStatic methodu main methodda çalismaz.
+
+
+    }
+    public static void staticOrnek(){
+        System.out.println("Gitti");
+    }
+    public void noStatic(){
+        System.out.println("geldi");
+    }
 }
