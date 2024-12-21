@@ -25,6 +25,7 @@ public class Kolay {
         soru6();
         soru7();
         soru8();
+        
 
 
     }
