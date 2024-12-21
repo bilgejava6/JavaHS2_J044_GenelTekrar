@@ -41,9 +41,58 @@ public class kolay {
 
         String str5="Merhaba Dunya";
         String tersMetin="";
-        for (int i = str5.length(); i > 0; i--) {
+        for (int i = str5.length()-1; i >= 0; i--) {
             tersMetin+=str5.charAt(i);
         }
         System.out.println(tersMetin);
+
+        //6.	İki String değişken tanımlayın ve bu değişkenlerin eşit olup olmadığını kontrol edin.
+
+        String str6="Merhaba Dunya";
+        String str7="Merhaba dunya";
+        if(str6.equals(str7)){
+            System.out.println("aynidir");
+        }else{
+            System.out.println("degildir");
+        }
+
+        //7.	Bir String oluşturun ve boş olup olmadığını kontrol eden bir kod yazın.
+
+        String str8="Merhaba Dunya";
+        if(str8.isEmpty()){
+            System.out.println("bostur");
+        }else {
+            System.out.println("degildir");
+        }
+
+        //8.	 ifadesindeki tüm boşlukları kaldırarak yeni metni yazdırın.
+
+        String str9="Java çok eğlenceli!";
+        String[] str9Dizi=str9.split(" ");
+        for(String s:str9Dizi){
+            System.out.print(s);
+        }
+        System.out.println("""
+                
+                """);
+
+        //9.	Kullanıcıdan bir kelime girmesini isteyin ve kelimenin içinde “a” harfinin olup olmadığını kontrol edin.
+
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the string ");
+        String str10=input.nextLine();
+
+        if( str10.contains("a")){
+            System.out.println("a vardir");
+        }else{
+            System.out.println("yoktur");
+        }
+
+        //10.	“Hello” ve “World” metinlerini birleştirerek konsola yazdırın.
+
+        String str11="Hello";
+        String str12=" World";
+        System.out.println(str11.concat(str12));
+
     }
 }
