@@ -32,62 +32,60 @@ public class Runner_Degiskenler_Zor {
             System.out.println("Girdiginiz değer integer degildir.");
         }
     }
-
-
         // soru 2 int, float, double, ve char türlerini kapsayacak şekilde bir sınıf oluşturun. Her türde değişkenler için setter ve getter metotları yazın.
- public class veriTipleri {
 
-            private int intDeger;
-            private float floatDeger;
-            private double doubleDeger;
-            private char charDeger;
+}
+class VeriTipleri {
 
-            // get set
-            // int
-            public int getIntDeger(){
-                return intDeger;
-            }
-            public void setIntDeger(int intDeger){
-                this.intDeger = intDeger;
-            }
-            //float
-            public float getFloatDeger(){
-                return floatDeger;
-            }
-            public void setFloatDeger(float floatDeger){
-                this.floatDeger = floatDeger;
-            }
-            // double
-            public double getDoubleDeger(double doubleDeger){
-                return doubleDeger;
-            }
-            public void setDoubleDeger(){
-                this.doubleDeger=doubleDeger;
-            }
-            // char
-            public char getCharDeger(){
-                return charDeger;
-            }
-            public void setCharDeger(char charDeger){
-                this.charDeger=charDeger;
-            }
+    private int intDeger;
+    private float floatDeger;
+    private double doubleDeger;
+    private char charDeger;
 
-            public static void main(String[] args) {
-                veriTipleri veri = new veriTipleri();
+    // get set
+    // int
+    public int getIntDeger(){
+        return intDeger;
+    }
+    public void setIntDeger(int intDeger){
+        this.intDeger = intDeger;
+    }
+    //float
+    public float getFloatDeger(){
+        return floatDeger;
+    }
+    public void setFloatDeger(float floatDeger){
+        this.floatDeger = floatDeger;
+    }
+    // double
+    public  void setDoubleDeger(double doubleDeger){
+        this.doubleDeger=doubleDeger;
+    }
+    public double getDoubleDeger(){
+        return doubleDeger;
+    }
+    // char
+    public char getCharDeger(){
+        return charDeger;
+    }
+    public void setCharDeger(char charDeger){
+        this.charDeger=charDeger;
+    }
 
-                // Değerleri ayarla
-                veri.setIntDeger(100);
-                veri.setFloatDeger(3.14f);
-                veri.setDoubleDeger(123.456);
-                veri.setCharDeger('A');
+    public static void main(String[] args) {
+        VeriTipleri veri = new VeriTipleri();
 
-                // Değerleri yazdır
-                System.out.println("int değer: " + veri.getIntDeger());
-                System.out.println("float değer: " + veri.getFloatDeger());
-                System.out.println("double değer: " + veri.getDoubleDeger());
-                System.out.println("char değer: " + veri.getCharDeger());
-            }
+        // Değerleri ayarla
+        veri.setIntDeger(100);
+        veri.setFloatDeger(3.14f);
+        veri.setDoubleDeger(123.456d);
+        veri.setCharDeger('A');
 
+        // Değerleri yazdır
+        System.out.println("int değer: " + veri.getIntDeger());
+        System.out.println("float değer: " + veri.getFloatDeger());
+        System.out.println("double değer: " + veri.getDoubleDeger());
+        System.out.println("char değer: " + veri.getCharDeger());
     }
 
 }
