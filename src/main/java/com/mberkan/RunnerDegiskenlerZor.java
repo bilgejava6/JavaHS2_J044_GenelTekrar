@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class RunnerDegiskenlerZor {
     public static void main(String[] args) {
         cevap10();
-        Cevap8 cv = new Cevap8();
+        Cevap8 cv = new Cevap8(); // neden kullanılmayan bir tanımlama yapılmış?
+        // bir sınıfta bir tane runner olamalı ve proje bir noktadan başlamalı.
     }
 
     public static void cevap1() {
