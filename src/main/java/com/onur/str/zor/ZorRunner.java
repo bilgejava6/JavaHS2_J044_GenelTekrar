@@ -7,24 +7,13 @@ import java.util.Scanner;
 public class ZorRunner {
 
     public static void main(String[] args) {
-        /**
-         ** 	1.	Kullanıcıdan bir String alın ve içindeki kelimelerin sırasını ters çevirerek konsola yazdırın.
-         * 	2.	Kullanıcıdan bir cümle alarak her kelimenin karakterlerini ters çeviren bir program yazın.
-         * 	3.	“Merhaba Dünya” metnindeki tüm harflerin ASCII değerlerini ekrana yazdıran bir kod yazın.
-         * 	4.	Kullanıcıdan bir kelime alın ve içinde tekrarlanan karakterleri çıkararak yeni bir kelime oluşturun.
-         * 	5.	Kullanıcıdan bir cümle alın ve cümledeki en uzun kelimeyi ekrana yazdırın.
-         * 	6.	Kullanıcıdan bir String alın ve bu metni şifrelemek için her harfi alfabede 3 karakter öteye taşıyan bir program yazın.
-         * 	7.	Bir String’in anagram olup olmadığını kontrol eden bir kod yazın.
-         * 	8.	Kullanıcıdan bir kelime alın ve kelimenin tüm olası permütasyonlarını konsola yazdırın.
-         * 	9.	Kullanıcıdan bir cümle alın ve bu cümledeki kelimelerin uzunluğuna göre sıralama yapan bir program yazın.
-         * 	10.	Kullanıcıdan iki metin alın ve ilk metnin ikinci metnin içinde kaç kez geçtiğini bulan bir kod yazın.
-         */
 
         // 1. Kullanıcıdan bir String alın ve içindeki kelimelerin sırasını ters çevirerek konsola yazdırın.
         System.out.println("Bir cümle girin: ");
         String cumle = new Scanner(System.in).nextLine();
         String tersCumle = new StringBuilder(cumle).reverse().toString();
         System.out.println("Ters çevrilmiş cümle: " + tersCumle);
+
         // 2. Kullanıcıdan bir cümle alarak her kelimenin karakterlerini ters çeviren bir program yazın.
         System.out.println("Bir cümle girin: ");
         String cumle2 = new Scanner(System.in).nextLine();
@@ -93,30 +82,8 @@ public class ZorRunner {
         String metin3 = new Scanner(System.in).nextLine();
         System.out.println("İkinci metni girin: ");
         String metin4 = new Scanner(System.in).nextLine();
-        long sayac = metin4.length() - metin4.replace(metin3, "").length();
-        System.out.println("Metin 2 içinde geçen metin 1 sayısı: " + sayac);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        long sayac = metin4.split(metin3, -1).length - 1;
+        System.out.println("Metin 1, metin 2 içinde " + sayac + " kez geçiyor.");
 
 
     }
