@@ -36,7 +36,7 @@ public class Runner_Degiskenler_Kolay {
     }
     private static void cevap8(){
         String degisken;
-        System.out.println(degisken);
+        //System.out.println(degisken);
         // degisken değeri initialized edilememiştir. Önce değer atanması gerekmektedir.
         // Değer atandıktan sonra intialized edilebilecektir.
     }
