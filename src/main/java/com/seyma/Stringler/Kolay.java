@@ -77,7 +77,7 @@ public class Kolay {
     }
 
     public static void soru7() {
-
+            // TODO: bunu diğer arkaşlarını çözümlerine bakarak çözelim.
     }
 
     public static void soru8() {
@@ -88,5 +88,5 @@ public class Kolay {
 
     }
 
-
+// TODO: eksik sorularu çözelim.
 }
