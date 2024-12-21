@@ -4,11 +4,7 @@ import java.util.Scanner;
 
 public class Runner_Degiskenler_Zor {
     public static void main(String[] args) {
-        cevap7();
-        DegiskenFarkliliklari degisken = new DegiskenFarkliliklari();
-        System.out.println(DegiskenFarkliliklari.y);
-       // System.out.println(DegiskenFarkliliklari.x);
-        System.out.println(degisken.x);
+        cevap10("elma",5);
     }
     private static void cevap1(String str){
         try{
@@ -76,6 +72,16 @@ public class Runner_Degiskenler_Zor {
         // 2. dönüşüm
         String donusum2 = Integer.toString(sayi);
         System.out.println(donusum1 + " ve " + donusum2);
+    }
+    private static void cevap9(){
+        int degerr = 12;
+        for(int i = 0 ; i < 10 ; i++){
+            degerr += i;
+        }
+        System.out.println(degerr);
+    }
+    private static void cevap10(String str, int no){
+        System.out.println(no + " adet " + str + " girdiniz.");
     }
 
 }
