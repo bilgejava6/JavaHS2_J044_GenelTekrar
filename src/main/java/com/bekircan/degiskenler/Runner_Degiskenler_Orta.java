@@ -69,7 +69,16 @@ public class Runner_Degiskenler_Orta {
         System.out.println("*** 8. soru ***");
         // 8.	Kullanıcıdan bir kelime girmesini isteyin ve bu kelimenin uzunluğunu hesaplayan bir program yazın.
 
+        System.out.println("Lütfen bir kelime girin: ");
+        String soru8kelime1 = sc.next();
+        System.out.println("Girilen Kelimenin karakter uzunluğu : " + soru8kelime1.length());
 
-
+        System.out.println("*** 9. soru ***");
+        // Bir short değişken oluşturup bir int değişkenine atayın. Bu işlem sırasında bir hata alır mısınız?
+        short soru9sayi1 = 100;
+        int soru9sayi2 = (soru9sayi1);
+        System.out.println("Short değer: " + soru9sayi1);
+        System.out.println("Int değer: " + soru9sayi2);
+        System.out.println("Hata Alınmaz: Çünkü int, short’tan daha büyük bir veri türüdür.");
     }
 }
