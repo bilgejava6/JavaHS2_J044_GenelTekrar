@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ZorRunner {
     public static void main(String[] args) {
-
+// Değişkenler kontrol edildi.
         // 1. Kullanıcıdan bir String girişi alın ve bunun bir tamsayı olup olmadığını kontrol edin. Eğer tamsayıysa ekrana dönüştürülmüş değerini yazdırın.
         Scanner scanner = new Scanner(System.in);
         System.out.print("Bir tamsayı girin: ");
