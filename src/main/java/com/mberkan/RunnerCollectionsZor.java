@@ -8,7 +8,7 @@ public class RunnerCollectionsZor {
     cevap1();
     }
     static void cevap1() {
-        Comparator<String> reverseComparator = Comparator.reverseOrder();
+        Comparator<String> ters = Comparator.reverseOrder();
 
         TreeMap<String, Integer> treeMap = new TreeMap<>(reverseComparator);
 
