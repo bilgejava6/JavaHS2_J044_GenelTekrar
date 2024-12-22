@@ -73,10 +73,113 @@ package com.bekircan;
  * 	9.	Kullanıcıdan bir cümle alın ve bu cümledeki kelimelerin uzunluğuna göre sıralama yapan bir program yazın.
  * 	10.	Kullanıcıdan iki metin alın ve ilk metnin ikinci metnin içinde kaç kez geçtiğini bulan bir kod yazın.
  * ** DÖNGÜLER
+ *Kolay
+ * 	1.	for döngüsü kullanarak 1’den 10’a kadar olan sayıları ekrana yazdırın.
+ * 	2.	Kullanıcıdan bir sayı alın ve bu sayının faktöriyelini hesaplayan bir program yazın.
+ * 	3.	while döngüsü kullanarak 1’den 100’e kadar olan çift sayıları ekrana yazdırın.
+ * 	4.	1 ile 50 arasındaki sayılardan 5’in katlarını yazdıran bir döngü yazın.
+ * 	5.	Kullanıcıdan bir kelime alın ve bu kelimeyi 5 kez ekrana yazdıran bir kod yazın.
+ * 	6.	do-while döngüsü kullanarak 1’den 20’ye kadar olan sayıları yazdırın.
+ * 	7.	Bir döngü içinde “Java” kelimesini 3 kez ekrana yazdırın.
+ * 	8.	Kullanıcıdan bir sayı alın ve 1’den bu sayıya kadar olan sayıların toplamını hesaplayan bir kod yazın.
+ * 	9.	Bir for döngüsüyle 10’dan geriye doğru sayan bir program yazın.
+ * 	10.	Bir döngü ile 0’dan 10’a kadar olan sayıların karesini ekrana yazdırın.
+ *
+ * Orta
+ * 	1.	Kullanıcıdan bir sayı alın ve bu sayıya kadar olan tüm asal sayıları ekrana yazdırın.
+ * 	2.	Kullanıcıdan bir sayı alın ve bu sayının Fibonacci serisini konsola yazdıran bir program yazın.
+ * 	3.	İç içe döngüler kullanarak bir çarpım tablosu oluşturun.
+ * 	4.	Kullanıcıdan bir sayı alın ve bu sayıyı tersten yazdıran bir program yazın.
+ * 	5.	Kullanıcıdan bir kelime alın ve kelimenin her karakterini bir satıra yazdıran bir kod yazın.
+ * 	6.	Bir for döngüsüyle 1’den 100’e kadar olan sayıların toplamını hesaplayın.
+ * 	7.	Bir sayı dizisindeki en büyük ve en küçük sayıyı bulan bir döngü yazın.
+ * 	8.	Bir while döngüsüyle bir sayının basamaklarının toplamını hesaplayan bir program yazın.
+ * 	9.	İç içe döngülerle bir yıldız desen çizdirin (örneğin, piramit).
+ * 	10.	1 ile 100 arasındaki sayıları kontrol ederek sadece 3 ve 5’e tam bölünebilenleri ekrana yazdırın.
+ *
+ * Zor
+ * 	1.	Kullanıcıdan bir sayı alın ve bu sayıyı asal çarpanlarına ayıran bir program yazın.
+ * 	2.	Bir sayı dizisindeki tüm çift ve tek sayıların toplamını ayrı ayrı bulan bir döngü yazın.
+ * 	3.	Kullanıcıdan bir sayı alın ve bu sayının mükemmel sayı olup olmadığını kontrol eden bir program yazın.
+ * 	4.	Kullanıcıdan bir kelime alın ve kelimenin permütasyonlarını iç içe döngüler kullanarak yazdırın.
+ * 	5.	Kullanıcıdan bir sayı alın ve bu sayıyı binary formatına dönüştüren bir döngü yazın.
+ * 	6.	Bir dizi içindeki tekrarlayan öğeleri bulan bir döngü yazın.
+ * 	7.	İç içe döngülerle bir elmas deseni çizen bir program yazın.
+ * 	8.	Kullanıcıdan bir sayı alın ve bu sayının tersine çevrilmiş halini yazdıran bir döngü yazın.
+ * 	9.	Bir for döngüsü kullanarak Pascal üçgenini ekrana yazdıran bir program yazın.
  *
  * ** KARAR YAPILARI
+ *Kolay
+ * 	1.	Kullanıcıdan bir sayı alın ve pozitif mi negatif mi olduğunu kontrol edin.
+ * 	2.	Kullanıcıdan bir sayı alın ve bu sayının çift mi tek mi olduğunu yazdıran bir program yazın.
+ * 	3.	Kullanıcıdan bir yaş değeri alın ve bu yaşa göre “Çocuk”, “Genç”, veya “Yetişkin” yazdırın.
+ * 	4.	Bir karakter alın ve bu karakterin sesli harf olup olmadığını kontrol eden bir kod yazın.
+ * 	5.	Kullanıcıdan bir not girilmesini isteyin ve bu nota göre “Geçti” veya “Kaldı” yazdırın.
+ * 	6.	Kullanıcıdan bir gün adı alın ve bu günün hafta içi mi hafta sonu mu olduğunu kontrol edin.
+ * 	7.	Bir sayının 0, 1 veya diğer durumlarını kontrol eden bir if yapısı yazın.
+ * 	8.	Kullanıcıdan bir rakam girilmesini isteyin ve bu rakamın İngilizce karşılığını yazdırın.
+ * 	9.	Kullanıcıdan bir sayı alın ve bu sayının 3 ve 5 ile bölünebilirliğini kontrol edin.
+ * 	10.	Kullanıcıdan bir ay numarası alın ve bu ayın kaç gün olduğunu yazdırın.
  *
+ * Orta
+ * 	1.	Kullanıcıdan iki sayı alın ve büyüğünü ekrana yazdıran bir kod yazın.
+ * 	2.	Kullanıcıdan bir not alın ve bu nota göre harf notu (A, B, C, vb.) yazdırın.
+ * 	3.	Kullanıcıdan bir yıl alın ve bu yılın artık yıl olup olmadığını kontrol edin.
+ * 	4.	Bir karakter alın ve bu karakterin büyük harf, küçük harf veya sayı olup olmadığını kontrol eden bir program yazın.
+ * 	5.	Kullanıcıdan üç sayı alın ve en büyüğünü bulan bir kod yazın.
+ * 	6.	Kullanıcıdan bir sayı alın ve bu sayının hangi çeyreğe (0-25, 26-50, vb.) düştüğünü kontrol edin.
+ * 	7.	Kullanıcıdan bir sayı alın ve bu sayının Fibonacci serisinde olup olmadığını kontrol edin.
+ * 	8.	Kullanıcıdan bir gün adı alın ve bu güne göre bir öneri yazdırın (örneğin: “Pazartesi: Yeni haftaya başlıyoruz!”).
+ * 	9.	Bir switch ifadesi kullanarak bir hesap makinesi yazın (toplama, çıkarma, çarpma, bölme).
+ * 	10.	Kullanıcıdan bir kelime alın ve bu kelimenin uzunluğuna göre farklı mesajlar yazdırın.
+ *
+ * Zor
+ * 	1.	Kullanıcıdan bir sayı alın ve bu sayının mükemmel kare olup olmadığını kontrol eden bir program yazın.
+ * 	2.	Kullanıcıdan bir sıcaklık değeri alın ve bu sıcaklığa göre “Soğuk”, “Ilık”, veya “Sıcak” yazdırın.
+ * 	3.	Kullanıcıdan bir tarih alın ve bu tarihin geçerli bir tarih olup olmadığını kontrol eden bir kod yazın.
+ * 	4.	Kullanıcıdan bir sayı alın ve bu sayının asal olup olmadığını kontrol eden bir program yazın.
+ * 	5.	Kullanıcıdan bir dizi sayı alın ve bu sayıların ortalamasını, medyanını ve modunu hesaplayan bir kod yazın.
+ * 	6.	Kullanıcıdan bir sayı alın ve bu sayıyı 1’den 5’e kadar karşılaştırarak farklı mesajlar yazdırın.
+ * 	7.	Bir kelimenin String içindeki en sık tekrar eden harfini bulan bir program yazın.
+ * 	8.	Kullanıcıdan bir sayı alın ve bu sayının tam kare, tam küp veya başka bir duruma uygun olup olmadığını yazdırın.
+ * 	9.	Bir yıl alın ve o yılın Çin Zodyak burcunu hesaplayan bir program yazın.
+ * 	10.	Kullanıcıdan bir kelime alın ve bu kelimenin tüm karakterlerinin alfabetik sıraya uygun olup olmadığını kontrol edin.
  * ** OOP
+ *
+ OOP - Kolay
+ 1.	Bir class oluşturun ve bu sınıfta bir özellik (field) ve bir metot tanımlayın.
+ 2.	Bir sınıfta private bir özellik tanımlayın ve buna erişmek için bir getter ve setter metodu oluşturun.
+ 3.	Bir sınıfta static bir özellik tanımlayın ve bu özelliğe sınıf adıyla erişin.
+ 4.	Bir sınıfta final bir metot oluşturun ve bu metodun neden override edilemediğini açıklayın.
+ 5.	Bir sınıfın birden fazla constructor tanımlamasını (constructor overloading) gösteren bir örnek yazın.
+ 6.	Bir this anahtar kelimesini kullanarak bir sınıf içindeki özelliğe erişimi gösterin.
+ 7.	Bir sınıfta toString metodunu override ederek sınıfın verilerini anlamlı bir şekilde yazdırın.
+ 8.	Bir sınıf oluşturun ve bu sınıfın bir nesnesini new anahtar kelimesi ile oluşturun.
+ 9.	Bir sınıfta bir metodu aynı isimle farklı parametrelerle tanımlayarak metot overloading yapın.
+ 10.	Bir sınıfta default bir constructor tanımlayın ve bu constructor’ın kullanımını gösterin.
+
+ OOP - Orta
+ 1.	Bir sınıf oluşturun ve bu sınıftan miras alan başka bir sınıf tanımlayın. super anahtar kelimesini kullanarak üst sınıfın constructor’ına erişimi gösterin.
+ 2.	Bir abstract sınıf ve ondan türeyen bir sınıf oluşturun. Abstract bir metodu override edin.
+ 3.	Bir arayüz (interface) oluşturun ve bu arayüzü uygulayan bir sınıf yazın.
+ 4.	Bir sınıfta static bir metot tanımlayın ve bunun nesne oluşturmadan nasıl çağrıldığını gösterin.
+ 5.	Bir sınıfta final bir özellik tanımlayın ve bu özelliğe sadece constructor içinde bir değer atanabileceğini gösterin.
+ 6.	Bir enum oluşturun ve bu enum türünde bir değişkeni sınıf içinde kullanın.
+ 7.	Bir sınıfta birden fazla arayüz (interface) uygulamanın nasıl yapıldığını gösteren bir örnek yazın.
+ 8.	Bir sınıfta polymorphism (çok biçimlilik) kullanarak aynı metot ismini farklı sınıflarda nasıl kullandığınızı gösterin.
+ 9.	Bir protected özelliğin sadece alt sınıflardan erişilebilir olduğunu gösteren bir örnek yazın.
+ 10.	İç içe sınıflar (nested classes) oluşturarak bir sınıf içinde başka bir sınıf tanımlayın ve kullanın.
+
+ OOP - Zor
+ 1.	Bir sınıfın equals metodunu override ederek nesne karşılaştırması yapmayı gösterin.
+ 2.	ÖNEMLİ. (MUTABLE - IMMUTABLE) Bir sınıfta immutable bir yapı oluşturun. Tüm özellikler private final olsun ve bir constructor ile ilk değerleri atayın.
+ 3.	Bir sınıf oluşturun ve bu sınıfta bir factory metodu kullanarak nesne yaratımını kontrol edin.
+ 4.	Bir sınıf oluşturun ve bu sınıf için singleton tasarım deseni uygulayın.
+ 6.	Bir sınıfta birden fazla constructor tanımlayın ve bunların her birini farklı parametrelerle çağıran bir nesne oluşturun.
+ 7.	İç içe geçmiş static ve non-static sınıfların farklarını gösteren bir program yazın.
+ 8.	Bir sınıfta method chaining kullanarak ardışık metot çağrımlarını mümkün kılan bir yapı oluşturun.
+ 10.	Bir sınıfta generics kullanarak, farklı türlerde çalışan bir metot tanımlayın (örneğin, bir listeyi sıralayan metot).
+
  *
  * ** COLLECTIONS
  *
@@ -85,7 +188,6 @@ package com.bekircan;
  * ** THREAD
  *
  */
-
 
 public class Runner {
 }
