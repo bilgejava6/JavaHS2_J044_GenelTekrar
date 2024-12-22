@@ -6,6 +6,10 @@ public class Runner_OOP_Kolay {
         sale.sell(15);
         Cevap7 cevap7 = new Cevap7("elif",31);
         System.out.println("Musteri bilgileri : " + cevap7.toString());
+        Cevap10 cevap10 = new Cevap10("elif",31);
+        System.out.println(cevap10.toString());
+        Cevap10 cevap101 = new Cevap10();
+        System.out.println(cevap101.toString());
     }
 
 }
@@ -113,5 +117,26 @@ class Cevap9{
     }
     public void hesapla(int sayi1, int sayi2){
         System.out.println(sayi1 + sayi2);
+    }
+}
+class Cevap10{
+
+    private String name;
+    private int yas;
+
+    public Cevap10() {
+    }
+
+    public Cevap10(String name, int yas) {
+        this.name = name;
+        this.yas = yas;
+    }
+
+    @Override
+    public String toString() {
+        return "Cevap10{" +
+                "name='" + name + '\'' +
+                ", yas=" + yas +
+                '}';
     }
 }
