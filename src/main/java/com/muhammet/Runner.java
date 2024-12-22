@@ -144,8 +144,43 @@ public class Runner {
          * 	7.	Bir kelimenin String içindeki en sık tekrar eden harfini bulan bir program yazın.
          * 	8.	Kullanıcıdan bir sayı alın ve bu sayının tam kare, tam küp veya başka bir duruma uygun olup olmadığını yazdırın.
          * 	9.	Bir yıl alın ve o yılın Çin Zodyak burcunu hesaplayan bir program yazın.
-
+         * 	10.	Kullanıcıdan bir kelime alın ve bu kelimenin tüm karakterlerinin alfabetik sıraya uygun olup olmadığını kontrol edin.
          * ** OOP
+         *
+         OOP - Kolay
+         1.	Bir class oluşturun ve bu sınıfta bir özellik (field) ve bir metot tanımlayın.
+         2.	Bir sınıfta private bir özellik tanımlayın ve buna erişmek için bir getter ve setter metodu oluşturun.
+         3.	Bir sınıfta static bir özellik tanımlayın ve bu özelliğe sınıf adıyla erişin.
+         4.	Bir sınıfta final bir metot oluşturun ve bu metodun neden override edilemediğini açıklayın.
+         5.	Bir sınıfın birden fazla constructor tanımlamasını (constructor overloading) gösteren bir örnek yazın.
+         6.	Bir this anahtar kelimesini kullanarak bir sınıf içindeki özelliğe erişimi gösterin.
+         7.	Bir sınıfta toString metodunu override ederek sınıfın verilerini anlamlı bir şekilde yazdırın.
+         8.	Bir sınıf oluşturun ve bu sınıfın bir nesnesini new anahtar kelimesi ile oluşturun.
+         9.	Bir sınıfta bir metodu aynı isimle farklı parametrelerle tanımlayarak metot overloading yapın.
+         10.	Bir sınıfta default bir constructor tanımlayın ve bu constructor’ın kullanımını gösterin.
+
+         OOP - Orta
+         1.	Bir sınıf oluşturun ve bu sınıftan miras alan başka bir sınıf tanımlayın. super anahtar kelimesini kullanarak üst sınıfın constructor’ına erişimi gösterin.
+         2.	Bir abstract sınıf ve ondan türeyen bir sınıf oluşturun. Abstract bir metodu override edin.
+         3.	Bir arayüz (interface) oluşturun ve bu arayüzü uygulayan bir sınıf yazın.
+         4.	Bir sınıfta static bir metot tanımlayın ve bunun nesne oluşturmadan nasıl çağrıldığını gösterin.
+         5.	Bir sınıfta final bir özellik tanımlayın ve bu özelliğe sadece constructor içinde bir değer atanabileceğini gösterin.
+         6.	Bir enum oluşturun ve bu enum türünde bir değişkeni sınıf içinde kullanın.
+         7.	Bir sınıfta birden fazla arayüz (interface) uygulamanın nasıl yapıldığını gösteren bir örnek yazın.
+         8.	Bir sınıfta polymorphism (çok biçimlilik) kullanarak aynı metot ismini farklı sınıflarda nasıl kullandığınızı gösterin.
+         9.	Bir protected özelliğin sadece alt sınıflardan erişilebilir olduğunu gösteren bir örnek yazın.
+         10.	İç içe sınıflar (nested classes) oluşturarak bir sınıf içinde başka bir sınıf tanımlayın ve kullanın.
+
+         OOP - Zor
+         1.	Bir sınıfın equals metodunu override ederek nesne karşılaştırması yapmayı gösterin.
+         2.	ÖNEMLİ. (MUTABLE - IMMUTABLE) Bir sınıfta immutable bir yapı oluşturun. Tüm özellikler private final olsun ve bir constructor ile ilk değerleri atayın.
+         3.	Bir sınıf oluşturun ve bu sınıfta bir factory metodu kullanarak nesne yaratımını kontrol edin.
+         4.	Bir sınıf oluşturun ve bu sınıf için singleton tasarım deseni uygulayın.
+         6.	Bir sınıfta birden fazla constructor tanımlayın ve bunların her birini farklı parametrelerle çağıran bir nesne oluşturun.
+         7.	İç içe geçmiş static ve non-static sınıfların farklarını gösteren bir program yazın.
+         8.	Bir sınıfta method chaining kullanarak ardışık metot çağrımlarını mümkün kılan bir yapı oluşturun.
+         10.	Bir sınıfta generics kullanarak, farklı türlerde çalışan bir metot tanımlayın (örneğin, bir listeyi sıralayan metot).
+
          *
          * ** COLLECTIONS
          *
