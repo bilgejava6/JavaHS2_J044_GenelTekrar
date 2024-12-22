@@ -163,6 +163,7 @@ public class kolay {
          adi="Sinif";
          ogrSayisi=0;
      }
+
  }
 
 

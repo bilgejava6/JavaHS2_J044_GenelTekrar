@@ -1,6 +1,8 @@
 package com.seyma.oop;
 
+
 public class orta {
+
     /**
      *    1.	Bir sınıf oluşturun ve bu sınıftan miras alan başka bir sınıf tanımlayın. super anahtar kelimesini kullanarak üst sınıfın constructor’ına erişimi gösterin.
      *          2.	Bir abstract sınıf ve ondan türeyen bir sınıf oluşturun. Abstract bir metodu override edin.
@@ -15,55 +17,155 @@ public class orta {
      */
 
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
+        int sonuc=Hesap.toplama(2,3);
+        System.out.println(sonuc);
+
+        Okulll okulll = new Okulll();
+        okulll.save("Ali");
+        okulll.update("2Öğrenci");
+
+        Personel personel =new Personel("Ali","Ankara",Unvan.MUDUR);
+
+
+
 
     }
-}
 
 
 
-class Okull {
-    String name;
-    Sinif adres;
+    //1.soru
 
-    public Okull(String name, Sinif adres) {
-        this.name = name;
-        this.adres = adres;
+    class Okull{
+        String name;
+        String adres;
+
+        public Okull(String name, String adres) {
+            this.name = name;
+            this.adres = adres;
+        }
     }
-}
 
-class Siniff extends Okull {
-    String sinifname;
-    int ogrSayisi;
+    class Sinif extends Okull{
+        int kademe;
+        int ogrSayisi;
 
-    public Siniff(String name, Sinif adres, String sinifname, int ogrSayisi) {
-        super(name, adres);
-        this.sinifname = sinifname;
-        this.ogrSayisi = ogrSayisi;
+        public Sinif(String name, String adres, int kademe, int ogrSayisi) {
+            super(name, adres);
+            this.kademe = kademe;
+            this.ogrSayisi = ogrSayisi;
+        }
     }
-}
 
 
 
+    //2.Soru
 
 
+    abstract class Sehir{
+        String name;
+        int plaka;
 
-abstract class Sehir{
-    String name;
-    int plaka;
+        public abstract Sehir adres();
 
-    public abstract Sehir adres();
-
-
-}
-
-class ilce extends Sehir{
-    String ilcename;
-
-    @Override
-    public Sehir adres() {
-        return null;
     }
+
+
+
+    class ilce extends Sehir{
+        String ilcename;
+
+        @Override
+        public Sehir adres() {
+            return null;
+        }
+    }
+
+    //3.Soru
+    static class  Okulll implements Siniff{
+
+       @Override
+        public void save(Object object) {
+
+        }
+
+        @Override
+        public void update(Object object) {
+
+       }
+    }
+
+    //4.Soru
+
+    class Hesap{
+
+
+        public static int toplama(int a,int b){
+
+            return a+b;
+        }
+    }
+
+
+    //5.Soru
+
+    class Aracc{
+        final String name;
+        final int plaka;
+
+        public Aracc(String name, int plaka) {
+            this.name = name;
+            this.plaka = plaka;
+        }
+
+        public void aracBilgi(){
+            System.out.println("Arac adı"+name+" Arac plakası"+plaka);
+        }
+    }
+
+    //6.soru
+
+    class Personel{
+        String name;
+        String adres;
+        private Unvan unvan;
+
+        public Personel(String name, String adres, Unvan unvan) {
+            this.name = name;
+            this.adres = adres;
+            this.unvan=unvan;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
 
 
