@@ -84,3 +84,118 @@ class Mains {
         System.out.println("Çarpma Sonucu: " + carpim);
     }
 }
+
+// 5. Sorunun Cevabi
+
+class FinalDegerli{
+    private final int deger;
+
+    FinalDegerli(int deger) {
+        this.deger = deger;
+    }
+
+    /**
+     * Eğer constuctor da değer atamazsak bir başlangıç değeri atamak zorundayiz.!
+     */
+}
+
+// 6.Sorunun Cevabi
+
+enum Cinsiyet{
+    Erkek,
+    Kadin
+}
+class Uye{
+    private Cinsiyet cinsiyet;
+
+    public Uye(Cinsiyet cinsiyet) {
+        this.cinsiyet = cinsiyet;
+    }
+
+    public static void main(String[] args) {
+        Uye uye = new Uye(Cinsiyet.Erkek);
+    }
+}
+
+// 7. Sorunun cevabi
+
+interface BackendDev{
+    void veritabanıTasarim();
+    void apiGelistir();
+}
+interface FrontEndDev{
+    void arayuzTasarim();
+    void frontendKodlama();
+}
+class FullStack implements BackendDev, FrontEndDev{
+
+    @Override
+    public void veritabanıTasarim() {
+        System.out.println("Veri tabani");
+    }
+
+    @Override
+    public void apiGelistir() {
+        System.out.println("apiGelistir");
+    }
+
+    @Override
+    public void arayuzTasarim() {
+        System.out.println("arayuzTasarim");
+    }
+
+    @Override
+    public void frontendKodlama() {
+        System.out.println("frontendKodlama");
+    }
+}
+
+// 8. Soru Cevabi
+
+class Hayvanlar{
+    void sesYap() {
+    }
+}
+class Kedii extends Hayvanlar{
+    void sesYap() {
+        System.out.println("Miyav");
+    }
+}
+class Kopek extends Hayvanlar{
+    void sesYap() {
+        System.out.println("Hav hav");
+    }
+}
+
+// 9. Soru Cevabi
+
+class ProdectedClass{
+    protected static int sayim=0;
+}
+class ProdectedClass2 extends ProdectedClass{
+    public static void main(String[] args) {
+        System.out.println(sayim);
+    }
+}
+
+// 10. Soru Cevabi
+
+    class DisSinif {
+        private int sayim = 5;
+
+        class IcSinif {
+            void sayimSayisi() {
+                System.out.println("Sayim Sayisi : " + sayim);
+            }
+        }
+
+        public void main(String[] args) {
+            DisSinif disSinif = new DisSinif();
+            IcSinif icSinif = disSinif.new IcSinif();
+            icSinif.sayimSayisi();
+        }
+    }
+    // TODO : Çıktı alamıyorum ve disSinif.new kullanımı!!!! ...
+
+
+
