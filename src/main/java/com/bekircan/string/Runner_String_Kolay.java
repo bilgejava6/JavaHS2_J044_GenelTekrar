@@ -44,5 +44,30 @@ public class Runner_String_Kolay {
         }
         System.out.println("Orijinal metin: " + str5);
         System.out.println("Ters metin: " + ters);
+    // soru 6 İki String değişken tanımlayın ve bu değişkenlerin eşit olup olmadığını kontrol edin.
+
+        String str6_1 = "Merhaba";
+        String str6_2 = "merhaba";
+        if (str6_1.equals(str6_2)) {
+            System.out.println("İki String eşittir.");
+        } else {
+            System.out.println("İki String eşit değildir.");
+        }
+    // soru 7 Bir String oluşturun ve boş olup olmadığını kontrol eden bir kod yazın.
+        String str7 = "Bekir Can";
+
+        if (str7 == null || str7.isEmpty()) {
+            System.out.println("boş");
+        }else{
+            System.out.println("Girdiğiniz metin: " + str7);
+        }
+    // soru 8 “Java çok eğlenceli!” ifadesindeki tüm boşlukları kaldırarak yeni metni yazdırın.
+        String str8 = "Java çok eğlenceli!";
+        String str8_1 = str8.replace(" ","");
+        System.out.println(str8_1);
+    // soru 9 Kullanıcıdan bir kelime girmesini isteyin ve kelimenin içinde “a” harfinin olup olmadığını kontrol edin.
+        System.out.println("Lütfen bir kelime giriniz:");
+        String kelime = sc.nextLine();
+
     }
 }
