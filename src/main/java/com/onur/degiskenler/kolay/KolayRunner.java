@@ -30,7 +30,7 @@ public class KolayRunner {
         System.out.println(x + y);
 
         // 7. Bir değişken tanımlayın ve ona null atayın. Sonra değerini 100 olarak değiştirin.
-        Integer deger = null;
+        Integer deger;
         deger = 100;
         System.out.println(deger);
 

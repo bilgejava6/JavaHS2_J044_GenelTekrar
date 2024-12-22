@@ -49,7 +49,7 @@ public class ZorRunner {
         }
         System.out.println("En uzun kelime: " + enUzunKelime);
 
-        // 6. Kullanıcıdan bir String alın ve bu metni şifrelemek için her harfi alfabede 3 karakter öteye taşıyan bir program yazın. stream api
+        // 6. Kullanıcıdan bir String alın ve bu metni şifrelemek için her harfi alfabede 3 karakter öteye taşıyan bir program yazın.
         System.out.println("Bir metin girin: ");
         String metin2 = new Scanner(System.in).nextLine();
         String sifreliMetin = metin2.chars().map(c -> c + 3).collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();
@@ -67,7 +67,9 @@ public class ZorRunner {
         System.out.println("Anagram mı: " + anagram);
 
         // 8. Kullanıcıdan bir kelime alın ve kelimenin tüm olası permütasyonlarını konsola yazdırın.
-
+        System.out.println("Bir kelime girin: ");
+        String kelime3 = new Scanner(System.in).nextLine();
+        permute(kelime3, 0, kelime3.length() - 1);
 
         // 9. Kullanıcıdan bir cümle alın ve bu cümledeki kelimelerin uzunluğuna göre sıralama yapan bir program yazın.
         System.out.println("Bir cümle girin: ");
@@ -86,6 +88,25 @@ public class ZorRunner {
         System.out.println("Metin 1, metin 2 içinde " + sayac + " kez geçiyor.");
 
 
+    }
+
+    private static void permute(String kelime, int baslangic, int bitis) {
+        if (baslangic == bitis) {
+            System.out.println(kelime);
+        } else {
+            for (int i = baslangic; i <= bitis; i++) {
+                kelime = swap(kelime, baslangic, i);
+                permute(kelime, baslangic + 1, bitis);
+            }
+        }
+    }
+
+    private static String swap(String kelime, int baslangic, int i) {
+        char[] kelimeDizi = kelime.toCharArray();
+        char temp = kelimeDizi[baslangic];
+        kelimeDizi[baslangic] = kelimeDizi[i];
+        kelimeDizi[i] = temp;
+        return String.valueOf(kelimeDizi);
     }
 
 }
