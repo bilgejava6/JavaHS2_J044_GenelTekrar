@@ -2,7 +2,8 @@ package com.muhammet;
 
 public class Runner {
     public static void main(String[] args) {
-        /**
+
+           /**
          * Muhammet HOCA
          *
          * ** DEĞİŞKENLER
@@ -180,10 +181,41 @@ public class Runner {
          7.	İç içe geçmiş static ve non-static sınıfların farklarını gösteren bir program yazın.
          8.	Bir sınıfta method chaining kullanarak ardışık metot çağrımlarını mümkün kılan bir yapı oluşturun.
          10.	Bir sınıfta generics kullanarak, farklı türlerde çalışan bir metot tanımlayın (örneğin, bir listeyi sıralayan metot).
-
          *
          * ** COLLECTIONS
-         *
+         * Collections - Kolay
+            * 	1.	Bir ArrayList oluşturun ve içine 5 adet sayı ekleyip konsola yazdırın.
+            * 	2.	Bir HashSet oluşturun ve içine birkaç aynı değeri ekleyin. HashSet’in tekrar eden değerleri kabul edip etmediğini gözlemleyin.
+            * 	3.	Bir LinkedList oluşturun ve bu listeye eleman ekleyip çıkararak listeyi yazdırın.
+            * 	4.	Bir TreeSet kullanarak elemanların doğal sıralamasını kontrol edin.
+            * 	5.	Bir HashMap oluşturun ve içine anahtar-değer çiftleri ekleyip yazdırın.
+            * 	6.	Bir PriorityQueue oluşturun ve elemanları ekledikten sonra sırayla çıkartarak yazdırın.
+            * 	7.	Bir ArrayList’in boyutunu öğrenmek için hangi metodu kullanacağınızı gösterin.
+            * 	8.	Bir HashSet içinde bir elemanın var olup olmadığını kontrol eden bir program yazın.
+            * 	9.	Bir HashMap’te bir anahtarın değeri nasıl güncellenir? Örnekle açıklayın.
+            * 	10.	Bir LinkedList’te bir elemanın başa ve sona eklenmesini sağlayan metotları kullanarak bir örnek yazın.
+            *
+            * Collections - Orta
+            * 	1.	Bir HashMap’te tüm anahtarları ve değerleri döngü ile yazdıran bir program yazın.
+            * 	2.	Bir ArrayList’i sıralamak için Collections.sort() yöntemini kullanın.
+            * 	3.	Bir TreeMap kullanarak anahtarların doğal sıralandığını gözlemleyin.
+            * 	4.	Bir LinkedList’i bir kuyruk (queue) gibi kullanarak eleman ekleme ve çıkarma işlemleri yapın.
+            * 	5.	Bir HashSet ile ArrayList arasındaki farkları örneklerle açıklayın.
+            * 	6.	Bir PriorityQueue kullanarak elemanları öncelik sırasına göre yazdıran bir program yazın.
+            * 	7.	Bir HashMap içinde belirli bir anahtarın veya değerin olup olmadığını kontrol eden bir kod yazın.
+            * 	8.	Bir ArrayList içindeki tekrarlayan elemanları bir HashSet kullanarak kaldırın.
+            * 	9.	Bir TreeSet kullanarak bir dizi sayıyı sıralayın ve sıralamanın nasıl çalıştığını açıklayın.
+            * 	10.	Bir LinkedHashMap kullanarak ekleme sırasının korunduğunu gösteren bir program yazın.
+            *
+            * Collections - Zor
+            * 	1.	Bir TreeMap oluşturun ve sıralama düzenini tersine çevirmek için bir Comparator kullanın.
+            * 	2.	Bir HashMap’i değerlerine göre sıralayıp sonucu yazdıran bir program yazın.
+            * 	3.	Bir LinkedList’i bir yığın (stack) gibi kullanarak eleman ekleme ve çıkarma işlemleri yapın.
+            * 	4.	Bir ArrayList’i bir HashSet’e ve daha sonra tekrar bir ArrayList’e dönüştüren bir program yazın.
+            * 	6.	Bir PriorityQueue oluşturun ve özelleştirilmiş bir sıralama düzeni için bir Comparator kullanın.
+            * 	7.	Bir HashMap ve TreeMap arasındaki performans farklarını analiz etmek için bir zaman ölçüm programı yazın.
+            * 	9.	Bir Deque (çift taraflı kuyruk) kullanarak elemanların hem baştan hem sondan eklenip çıkarılmasını sağlayan bir program yazın.
+            * 	10.	Bir ArrayDeque kullanarak bir kelimeyi tersine çeviren bir program yazın.
          * ** STREAM API
          *
          * ** THREAD

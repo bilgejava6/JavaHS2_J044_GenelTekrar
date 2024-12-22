@@ -17,7 +17,7 @@ public class RunnerStringZor {
         System.out.println(tersCumle.toString());
     }
     static void cevap2(){
-
+    
 
     }
 }
