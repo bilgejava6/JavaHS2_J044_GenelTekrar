@@ -256,7 +256,590 @@ public class Runner {
             *
             *
          * ** THREAD
-         *
+            *
+            * KOLAY
+            * --------
+            * Soru 1: Thread Oluşturma
+            * Bir sınıf oluşturun ve Thread sınıfını genişleterek basit bir iş parçacığı yazın.
+            * Bu iş parçacığı 5 kez “Merhaba Dünya!” yazdırsın.
+            * Soru 2: Runnable Kullanımı
+            * Bir Runnable arabirimi uygulayan sınıf yazın. Bu sınıf, bir sayı listesindeki tüm elemanları ekrana yazdırsın.
+            * Soru 3: Thread Adı Ayarlama
+            * Bir iş parçacığının adını ayarlayın ve bu adı konsola yazdıran bir kod yazın.
+            * Soru 4: Thread Uyutma/Bekletme (sleep)
+            * Bir iş parçacığı oluşturun ve bu iş parçacığını her iterasyonda 1 saniye uyutun.
+            * Soru 5: Çoklu Thread Başlatma
+            * Aynı işlemi yapan 3 iş parçacığı oluşturun ve çalıştırın.
+            *
+            * ORTA SESVİYE
+            * ---------------
+            * Soru 6: Senkronizasyon
+            * Birden fazla iş parçacığının aynı anda bir sayacı artırdığı bir program yazın.
+            * İş parçacıkları arasında veri tutarlılığını sağlamak için senkronizasyon kullanın.
+            * Soru 7: Thread Join Kullanımı
+            * Bir iş parçacığını başka bir iş parçacığı bitene kadar bekletin (join kullanarak).
+            * Soru 8: Deadlock Oluşumu
+            * İki iş parçacığının deadlock oluşturduğu bir program yazın.
+            * Soru 9: Thread Pool Kullanımı
+            * Bir Thread Pool oluşturun ve 5 iş parçacığı çalıştırın.
+            * ZOR SEVİYE
+            * ---------------
+            * Soru 10: Producer-Consumer Problemi
+            * Bir üretici-tüketici problemini çözmek için wait ve notify kullanın.
+            *
+            *
+            *
+            *GERÇEK DÜNYA SENARYOLARI (ZOR)
+            *
+            * Soru 1: Posta Teslimatı (Thread Oluşturma)
+            * Bir posta teslimat şirketi, mektupları dağıtmak için birden fazla posta görevlisi kullanır.
+            * Her görevli farklı bir bölgeye hizmet eder. Java’da her bir posta görevlisini bir iş parçacığı olarak
+            * modelleyin ve her iş parçacığının bir bölgedeki teslimatlarını temsil etmesini sağlayın.
+            *
+            * Soru 2: Banka İşlemleri (Runnable Kullanımı)
+            * Bir banka, aynı anda birden fazla müşteriye hizmet verir. Bir müşteri para yatırırken başka
+            * bir müşteri para çekiyor olabilir. Bu durumu birden fazla iş parçacığı ile modelleyin.
+            *
+            * Soru 3: Restoran Sipariş Sistemi (Thread Senkronizasyonu)
+            * Bir restoranda bir müşteri sipariş verir ve şef bu siparişi hazırlar. Sipariş hazır olmadan
+            * müşteri yemeği alamaz. Bu durumu bir iş parçacığı senkronizasyonuyla modelleyin.
+            *
+            * Soru 4: Otopark (Thread-safe Collection)
+            * Bir otoparkta sınırlı sayıda park yeri vardır. Birden fazla araba park etmeye çalışabilir,
+            * ancak otopark dolarsa beklemek zorundadır. Bu durumu thread-safe bir koleksiyon kullanarak modelleyin.
+            *
+            *
+            *
+            *
+            * CEVAPLAR THREAD
+            * -------------------------
+            * DİKKAT!!!!!!
+            * Lütfen soruları okuyup anlamaya çalışın sonra çözümlerine bakıp tek tek ayrı sınıflarda çözümlerini deneyin
+            *
+            * Soru 1: Thread Oluşturma
+            *
+            * Bir sınıf oluşturun ve Thread sınıfını genişleterek basit bir iş parçacığı yazın. Bu iş parçacığı 5 kez “Merhaba Dünya!” yazdırsın.
+            *
+            * Cevap:
+            *
+            * class MyThread extends Thread {
+            *     @Override
+            *     public void run() {
+            *         for (int i = 0; i < 5; i++) {
+            *             System.out.println("Merhaba Dünya!");
+            *         }
+            *     }
+            * }
+            *
+            * public class Main {
+            *     public static void main(String[] args) {
+            *         MyThread thread = new MyThread();
+            *         thread.start();
+            *     }
+            * }
+            *
+            * Soru 2: Runnable Kullanımı
+            *
+            * Bir Runnable arabirimi uygulayan sınıf yazın. Bu sınıf, bir sayı listesindeki tüm elemanları ekrana yazdırsın.
+            *
+            * Cevap:
+            *
+            * class MyRunnable implements Runnable {
+            *     @Override
+            *     public void run() {
+            *         int[] numbers = {1, 2, 3, 4, 5};
+            *         for (int num : numbers) {
+            *             System.out.println(num);
+            *         }
+            *     }
+            * }
+            *
+            * public class Main {
+            *     public static void main(String[] args) {
+            *         Thread thread = new Thread(new MyRunnable());
+            *         thread.start();
+            *     }
+            * }
+            *
+            * Soru 3: Thread Adı Ayarlama
+            *
+            * Bir iş parçacığının adını ayarlayın ve bu adı konsola yazdıran bir kod yazın.
+            *
+            * Cevap:
+            *
+            * class NamedThread extends Thread {
+            *     @Override
+            *     public void run() {
+            *         System.out.println("Thread adı: " + getName());
+            *     }
+            * }
+            *
+            * public class Main {
+            *     public static void main(String[] args) {
+            *         NamedThread thread = new NamedThread();
+            *         thread.setName("TestThread");
+            *         thread.start();
+            *     }
+            * }
+            *
+            * Soru 4: Thread Uyutma (sleep)
+            *
+            * Bir iş parçacığı oluşturun ve bu iş parçacığını her iterasyonda 1 saniye uyutun.
+            *
+            * Cevap:
+            *
+            * class SleepyThread extends Thread {
+            *     @Override
+            *     public void run() {
+            *         for (int i = 1; i <= 5; i++) {
+            *             System.out.println("Sayı: " + i);
+            *             try {
+            *                 Thread.sleep(1000);
+            *             } catch (InterruptedException e) {
+            *                 e.printStackTrace();
+            *             }
+            *         }
+            *     }
+            * }
+            *
+            * public class Main {
+            *     public static void main(String[] args) {
+            *         SleepyThread thread = new SleepyThread();
+            *         thread.start();
+            *     }
+            * }
+            *
+            * Soru 5: Çoklu Thread Başlatma
+            *
+            * Aynı işlemi yapan 3 iş parçacığı oluşturun ve çalıştırın.
+            *
+            * Cevap:
+            *
+            * class PrintThread extends Thread {
+            *     @Override
+            *     public void run() {
+            *         System.out.println(getName() + " çalışıyor.");
+            *     }
+            * }
+            *
+            * public class Main {
+            *     public static void main(String[] args) {
+            *         Thread t1 = new PrintThread();
+            *         Thread t2 = new PrintThread();
+            *         Thread t3 = new PrintThread();
+            *
+            *         t1.start();
+            *         t2.start();
+            *         t3.start();
+            *     }
+            * }
+            *
+            * Orta Seviyeli Sorular
+            *
+            * Soru 6: Senkronizasyon
+            *
+            * Birden fazla iş parçacığının aynı anda bir sayacı artırdığı bir program yazın. İş parçacıkları arasında veri tutarlılığını sağlamak için senkronizasyon kullanın.
+            *
+            * Cevap:
+            *
+            * class Counter {
+            *     private int count = 0;
+            *
+            *     public synchronized void increment() {
+            *         count++;
+            *     }
+            *
+            *     public int getCount() {
+            *         return count;
+            *     }
+            * }
+            *
+            * class CounterThread extends Thread {
+            *     private Counter counter;
+            *
+            *     public CounterThread(Counter counter) {
+            *         this.counter = counter;
+            *     }
+            *
+            *     @Override
+            *     public void run() {
+            *         for (int i = 0; i < 100; i++) {
+            *             counter.increment();
+            *         }
+            *     }
+            * }
+            *
+            * public class Main {
+            *     public static void main(String[] args) throws InterruptedException {
+            *         Counter counter = new Counter();
+            *         Thread t1 = new CounterThread(counter);
+            *         Thread t2 = new CounterThread(counter);
+            *
+            *         t1.start();
+            *         t2.start();
+            *
+            *         t1.join();
+            *         t2.join();
+            *
+            *         System.out.println("Toplam: " + counter.getCount());
+            *     }
+            * }
+            *
+            * Soru 7: Thread Join Kullanımı
+            *
+            * Bir iş parçacığını başka bir iş parçacığı bitene kadar bekletin (join kullanarak).
+            *
+            * Cevap:
+            *
+            * class WorkerThread extends Thread {
+            *     @Override
+            *     public void run() {
+            *         System.out.println(getName() + " çalışmaya başladı.");
+            *         try {
+            *             Thread.sleep(2000);
+            *         } catch (InterruptedException e) {
+            *             e.printStackTrace();
+            *         }
+            *         System.out.println(getName() + " tamamlandı.");
+            *     }
+            * }
+            *
+            * public class Main {
+            *     public static void main(String[] args) throws InterruptedException {
+            *         WorkerThread thread1 = new WorkerThread();
+            *         WorkerThread thread2 = new WorkerThread();
+            *
+            *         thread1.start();
+            *         thread1.join(); // thread2 bekler
+            *
+            *         thread2.start();
+            *     }
+            * }
+            *
+            * Soru 8: Deadlock Oluşumu
+            *
+            * İki iş parçacığının deadlock oluşturduğu bir program yazın.
+            *
+            * Cevap:
+            *
+            * class Resource {
+            * }
+            *
+            * public class DeadlockDemo {
+            *     public static void main(String[] args) {
+            *         Resource resource1 = new Resource();
+            *         Resource resource2 = new Resource();
+            *
+            *         Thread t1 = new Thread(() -> {
+            *             synchronized (resource1) {
+            *                 System.out.println("Thread 1: resource1 kilitlendi.");
+            *                 synchronized (resource2) {
+            *                     System.out.println("Thread 1: resource2 kilitlendi.");
+            *                 }
+            *             }
+            *         });
+            *
+            *         Thread t2 = new Thread(() -> {
+            *             synchronized (resource2) {
+            *                 System.out.println("Thread 2: resource2 kilitlendi.");
+            *                 synchronized (resource1) {
+            *                     System.out.println("Thread 2: resource1 kilitlendi.");
+            *                 }
+            *             }
+            *         });
+            *
+            *         t1.start();
+            *         t2.start();
+            *     }
+            * }
+            *
+            * Soru 9: Thread Pool Kullanımı
+            *
+            * Bir Thread Pool oluşturun ve 5 iş parçacığı çalıştırın.
+            *
+            * Cevap:
+            *
+            * import java.util.concurrent.ExecutorService;
+            * import java.util.concurrent.Executors;
+            *
+            * public class ThreadPoolDemo {
+            *     public static void main(String[] args) {
+            *         ExecutorService executor = Executors.newFixedThreadPool(3);
+            *
+            *         for (int i = 1; i <= 5; i++) {
+            *             int taskId = i;
+            *             executor.execute(() -> {
+            *                 System.out.println("Görev " + taskId + " çalışıyor.");
+            *             });
+            *         }
+            *
+            *         executor.shutdown();
+            *     }
+            * }
+            *
+            * Soru 10: Producer-Consumer Problemi
+            *
+            * Bir üretici-tüketici problemini çözmek için wait ve notify kullanın.
+            *
+            * Cevap:
+            *
+            * import java.util.LinkedList;
+            * import java.util.Queue;
+            *
+            * class SharedQueue {
+            *     private final Queue<Integer> queue = new LinkedList<>();
+            *     private final int capacity = 5;
+            *
+            *     public synchronized void produce(int value) throws InterruptedException {
+            *         while (queue.size() == capacity) {
+            *             wait();
+            *         }
+            *         queue.add(value);
+            *         System.out.println("Üretildi: " + value);
+            *         notify();
+            *     }
+            *
+            *     public synchronized int consume() throws InterruptedException {
+            *         while (queue.isEmpty()) {
+            *             wait();
+            *         }
+            *         int value = queue.poll();
+            *         System.out.println("Tüketildi: " + value);
+            *         notify();
+            *         return value;
+            *     }
+            * }
+            *
+            * public class ProducerConsumer {
+            *     public static void main(String[] args) {
+            *         SharedQueue sharedQueue = new SharedQueue();
+            *
+            *         Thread producer = new Thread(() -> {
+            *             for (int i = 0; i < 10; i++) {
+            *                 try {
+            *                     sharedQueue.produce(i);
+            *                 } catch (InterruptedException e) {
+            *                     e.printStackTrace();
+            *                 }
+            *             }
+            *         });
+            *
+            *         Thread consumer = new Thread(() -> {
+            *             for (int i = 0; i < 10; i++) {
+            *                 try {
+            *                     sharedQueue.consume();
+            *                 } catch (InterruptedException e) {
+            *                     e.printStackTrace();
+            *                 }
+            *             }
+            *         });
+            *
+            *         producer.start();
+            *         consumer.start();
+            *     }
+            * }
+            *
+            * -------------------------
+            * GERÇEK DÜNYA SRNARYOLARI
+            *  Soru 1: Posta Teslimatı (Thread Oluşturma)
+            *
+            * Bir posta teslimat şirketi, mektupları dağıtmak için birden fazla posta görevlisi kullanır. Her görevli farklı bir bölgeye hizmet eder. Java’da her bir posta görevlisini bir iş parçacığı olarak modelleyin ve her iş parçacığının bir bölgedeki teslimatlarını temsil etmesini sağlayın.
+            *
+            * Cevap:
+            *
+            * class Postman extends Thread {
+            *     private String region;
+            *
+            *     public Postman(String region) {
+            *         this.region = region;
+            *     }
+            *
+            *     @Override
+            *     public void run() {
+            *         System.out.println(region + " bölgesinde teslimat yapılıyor...");
+            *         try {
+            *             Thread.sleep(2000); // Teslimat süresi
+            *         } catch (InterruptedException e) {
+            *             System.out.println("Teslimat kesildi.");
+            *         }
+            *         System.out.println(region + " bölgesindeki teslimat tamamlandı.");
+            *     }
+            * }
+            *
+            * public class PostDelivery {
+            *     public static void main(String[] args) {
+            *         Postman postman1 = new Postman("Merkez");
+            *         Postman postman2 = new Postman("Kuzey");
+            *         Postman postman3 = new Postman("Güney");
+            *
+            *         postman1.start();
+            *         postman2.start();
+            *         postman3.start();
+            *     }
+            * }
+            *
+            * Soru 2: Banka İşlemleri (Runnable Kullanımı)
+            *
+            * Bir banka, aynı anda birden fazla müşteriye hizmet verir. Bir müşteri para yatırırken başka bir müşteri para çekiyor olabilir. Bu durumu birden fazla iş parçacığı ile modelleyin.
+            *
+            * Cevap:
+            *
+            * class BankAccount {
+            *     private int balance = 1000;
+            *
+            *     public synchronized void deposit(int amount) {
+            *         balance += amount;
+            *         System.out.println("Para yatırıldı: " + amount + " | Güncel bakiye: " + balance);
+            *     }
+            *
+            *     public synchronized void withdraw(int amount) {
+            *         if (balance >= amount) {
+            *             balance -= amount;
+            *             System.out.println("Para çekildi: " + amount + " | Güncel bakiye: " + balance);
+            *         } else {
+            *             System.out.println("Yetersiz bakiye! Güncel bakiye: " + balance);
+            *         }
+            *     }
+            * }
+            *
+            * class DepositTask implements Runnable {
+            *     private BankAccount account;
+            *
+            *     public DepositTask(BankAccount account) {
+            *         this.account = account;
+            *     }
+            *
+            *     @Override
+            *     public void run() {
+            *         account.deposit(500);
+            *     }
+            * }
+            *
+            * class WithdrawTask implements Runnable {
+            *     private BankAccount account;
+            *
+            *     public WithdrawTask(BankAccount account) {
+            *         this.account = account;
+            *     }
+            *
+            *     @Override
+            *     public void run() {
+            *         account.withdraw(700);
+            *     }
+            * }
+            *
+            * public class BankOperations {
+            *     public static void main(String[] args) {
+            *         BankAccount account = new BankAccount();
+            *
+            *         Thread t1 = new Thread(new DepositTask(account));
+            *         Thread t2 = new Thread(new WithdrawTask(account));
+            *
+            *         t1.start();
+            *         t2.start();
+            *     }
+            * }
+            *
+            * Soru 3: Restoran Sipariş Sistemi (Thread Senkronizasyonu)
+            *
+            * Bir restoranda bir müşteri sipariş verir ve şef bu siparişi hazırlar. Sipariş hazır olmadan müşteri yemeği alamaz. Bu durumu bir iş parçacığı senkronizasyonuyla modelleyin.
+            *
+            * Cevap:
+            *
+            * class Restaurant {
+            *     private boolean orderReady = false;
+            *
+            *     public synchronized void placeOrder() {
+            *         System.out.println("Müşteri: Sipariş verdim.");
+            *         orderReady = false;
+            *     }
+            *
+            *     public synchronized void prepareOrder() {
+            *         System.out.println("Şef: Siparişi hazırlıyorum...");
+            *         try {
+            *             Thread.sleep(3000); // Sipariş hazırlama süresi
+            *         } catch (InterruptedException e) {
+            *             e.printStackTrace();
+            *         }
+            *         orderReady = true;
+            *         System.out.println("Şef: Sipariş hazır!");
+            *         notify();
+            *     }
+            *
+            *     public synchronized void receiveOrder() {
+            *         while (!orderReady) {
+            *             try {
+            *                 System.out.println("Müşteri: Siparişim hazır değil, bekliyorum.");
+            *                 wait();
+            *             } catch (InterruptedException e) {
+            *                 e.printStackTrace();
+            *             }
+            *         }
+            *         System.out.println("Müşteri: Siparişimi aldım.");
+            *     }
+            * }
+            *
+            * public class RestaurantSimulation {
+            *     public static void main(String[] args) {
+            *         Restaurant restaurant = new Restaurant();
+            *
+            *         Thread chef = new Thread(restaurant::prepareOrder);
+            *         Thread customer = new Thread(() -> {
+            *             restaurant.placeOrder();
+            *             restaurant.receiveOrder();
+            *         });
+            *
+            *         customer.start();
+            *         chef.start();
+            *     }
+            * }
+            *
+            * Soru 4: Otopark (Thread-safe Collection)
+            *
+            * Bir otoparkta sınırlı sayıda park yeri vardır. Birden fazla araba park etmeye çalışabilir, ancak otopark dolarsa beklemek zorundadır. Bu durumu thread-safe bir koleksiyon kullanarak modelleyin.
+            *
+            * Cevap:
+            *
+            * import java.util.concurrent.ArrayBlockingQueue;
+            *
+            * class ParkingLot {
+            *     private final ArrayBlockingQueue<String> parkingSpots;
+            *
+            *     public ParkingLot(int capacity) {
+            *         parkingSpots = new ArrayBlockingQueue<>(capacity);
+            *     }
+            *
+            *     public void park(String car) {
+            *         try {
+            *             parkingSpots.put(car);
+            *             System.out.println(car + " park etti. Boş yer: " + (parkingSpots.remainingCapacity()));
+            *         } catch (InterruptedException e) {
+            *             e.printStackTrace();
+            *         }
+            *     }
+            *
+            *     public void leave(String car) {
+            *         parkingSpots.remove(car);
+            *         System.out.println(car + " ayrıldı. Boş yer: " + (parkingSpots.remainingCapacity()));
+            *     }
+            * }
+            *
+            * public class ParkingSimulation {
+            *     public static void main(String[] args) {
+            *         ParkingLot parkingLot = new ParkingLot(3);
+            *
+            *         Runnable car1 = () -> parkingLot.park("Araba 1");
+            *         Runnable car2 = () -> parkingLot.park("Araba 2");
+            *         Runnable car3 = () -> parkingLot.park("Araba 3");
+            *         Runnable car4 = () -> parkingLot.park("Araba 4");
+            *
+            *         new Thread(car1).start();
+            *         new Thread(car2).start();
+            *         new Thread(car3).start();
+            *         new Thread(car4).start();
+            *     }
+            * }
+            *
          */
     }
 }
