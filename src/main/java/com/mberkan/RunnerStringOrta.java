@@ -1,10 +1,11 @@
 package com.mberkan;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class RunnerStringOrta {
     public static void main(String[] args) {
-    cevap6();
+    cevap9();
     }
     static void cevap1(){
         String metin = "Bugun hava cok yagmurlu yarin umarim gunes acar";
@@ -41,6 +42,28 @@ public class RunnerStringOrta {
         for (int i = 0;i<str.length();i++){
             System.out.println(str.charAt(i));
         }
+    }
+    static void cevap7(){
+    // yapamadim
+    }
+    static void cevap8(){
+        String str = "programlama";
+        int sayim = 0;
+        for (int i = 0;i<str.length();i++){
+            if(str.charAt(i)=='a'){
+                sayim++;
+            }else if(str.charAt(i)=='o'){
+                sayim++;
+            }
+        }
+        System.out.println(sayim);
+    }
+    static void cevap9(){
+        System.out.println("Lutfen bir cumle giriniz");
+        String str = new Scanner(System.in).nextLine();
+        String[] kelime = str.split(" ");
+
+
     }
 
 
