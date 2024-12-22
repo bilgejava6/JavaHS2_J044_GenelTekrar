@@ -19,7 +19,7 @@ public class RunnerCollectionsZor {
         treeMap.put("E", 5);
 
         for (String key : treeMap.keySet()) {
-            System.out.println("Anahtar: " + key + ", Deger: " + treeMap.get(key));
+            System.out.println("Anahtar: " + key + " Deger: " + treeMap.get(key));
         }
         }
     }
