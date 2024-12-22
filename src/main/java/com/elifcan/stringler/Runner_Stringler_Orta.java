@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class Runner_Stringler_Orta {
     public static void main(String[] args) {
-        System.out.println(cevap7());
-        System.out.println(cevap5("Kazak"));
-        cevap6("elifcan");
+        System.out.println(cevap8());
+
     }
     private static String cevap1(String state){
         StringBuilder stringBuilder = new StringBuilder(state);
@@ -48,5 +47,14 @@ public class Runner_Stringler_Orta {
         String state = "fabrika";
         String tekrar = state.substring(0,3) + state.substring(0,3) + state.substring(0,3);
         return tekrar;
+    }
+    private static int cevap8(){
+        String state = "programlama";
+        int count = 0;
+        for (int i = 0; i < state.length(); i++){
+            if(state.charAt(i) == 'a' || state.charAt(i) == 'o')
+                count++;
+        }
+        return count;
     }
 }
