@@ -190,7 +190,6 @@ public class Runner_karary_orta {
         } else {
             System.out.println("Kelime uzun.");
 
-
         }
     }
 }
