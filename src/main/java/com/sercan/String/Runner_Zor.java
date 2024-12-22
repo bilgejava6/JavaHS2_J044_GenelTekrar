@@ -1,5 +1,7 @@
 package com.sercan.String;
 
+import java.util.Scanner;
+
 public class Runner_Zor {
     public static void main(String[] args) {
         /*** Zor (ÖDEV OLARAK KALSIN)
@@ -15,6 +17,22 @@ public class Runner_Zor {
          * 	10.	Kullanıcıdan iki metin alın ve ilk metnin ikinci metnin içinde kaç kez geçtiğini bulan bir kod yazın.
          *
          **/
+
+    }
+
+    public static void cevap1(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Bir metin giriniz : ");
+        String cumle=sc.nextLine();
+        String[] kelimeler=cumle.split(" ");
+        String tersCumle="";
+        for (int i= kelimeler.length-1;i>=0;i++){
+            tersCumle+=kelimeler[i]+" ";
+        }
+        System.out.println(tersCumle);
+    }
+
+    public static void cevap2(){
 
     }
 }
