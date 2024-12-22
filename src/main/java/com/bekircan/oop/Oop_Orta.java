@@ -21,10 +21,7 @@ public class Oop_Orta {
         System.out.println();
         System.out.println("*** 1. Soru: super anahtar kelimesi ***");
 
-        // Alt sınıf nesnesi oluşturuluyor
         Otomobil otomobil = new Otomobil("Toyota", 180, 5);
-
-        // Metot çağrısı
         otomobil.bilgileriGoster();
 
         // 2. soru
@@ -41,5 +38,9 @@ public class Oop_Orta {
 
         yolcuUcagi.havalan();
         yolcuUcagi.in();
+
+        // 4. Soru:
+
+
     }
 }
