@@ -217,7 +217,44 @@ public class Runner {
             * 	9.	Bir Deque (çift taraflı kuyruk) kullanarak elemanların hem baştan hem sondan eklenip çıkarılmasını sağlayan bir program yazın.
             * 	10.	Bir ArrayDeque kullanarak bir kelimeyi tersine çeviren bir program yazın.
          * ** STREAM API
-         *
+            * Stream API - Kolay
+            * 	1.	Bir List<Integer> oluşturun ve forEach kullanarak tüm elemanları yazdırın.
+            * 	2.	Bir List<String>’i Stream API ile alfabetik olarak sıralayıp yazdırın.
+            * 	3.	Bir List<Integer>’deki tüm elemanların karesini hesaplayan bir Stream işlemi yazın.
+            * 	4.	Bir List<String> içinde belirli bir kelimenin (örneğin, “Java”) var olup olmadığını kontrol edin.
+            * 	5.	Bir List<Integer>’deki yalnızca çift sayıları filtreleyip yazdıran bir kod yazın.
+            * 	6.	Bir List<Integer>’deki elemanların toplamını Stream API kullanarak hesaplayın.
+            * 	7.	Bir List<String> içindeki tüm elemanları büyük harfe çevirip yazdıran bir Stream işlemi yazın.
+            * 	8.	Bir Stream kullanarak belirli bir aralıkta (örneğin, 1 ile 10 arasında) bir sayı listesi oluşturun.
+            * 	9.	Bir List<String> içindeki boş olmayan elemanları filtreleyip yazdırın.
+            * 	10.	Bir List<Integer> içindeki en küçük sayıyı Stream API kullanarak bulun.
+            *
+            * Stream API - Orta
+            * 	1.	Bir List<String> içindeki elemanları Stream kullanarak uzunluklarına göre sıralayın ve yazdırın.
+            * 	2.	Bir List<Integer>’deki benzersiz elemanları distinct kullanarak yazdırın.
+            * 	3.	Bir List<String>’de belirli bir uzunluktan (örneğin, 5 karakter) uzun olan elemanları filtreleyin.
+            * 	4.	Bir Stream’den Map oluşturmak için collect(Collectors.toMap()) kullanarak bir kod yazın.
+            * 	5.	Bir List<Integer> içindeki elemanların ortalamasını Stream API ile hesaplayın.
+            * 	6.	Bir List<String>’deki elemanları birleştirip (concatenate) tek bir String oluşturun (Collectors.joining kullanarak).
+            * 	7.	Bir List<Integer> içindeki tüm elemanların çarpımını reduce kullanarak hesaplayın.
+            * 	8.	Bir Map<String, Integer>’deki anahtarları Stream olarak elde edin ve yazdırın.
+            * 	9.	Bir List<Integer>’deki elemanları önce filtreleyip (örneğin, çift sayılar), sonra sıralayın ve yazdırın.
+            * 	10.	Bir List<String> içindeki elemanları gruplamak için Collectors.groupingBy kullanın (örneğin, eleman uzunluğuna göre).
+            *
+            * Stream API - Zor
+            * 	1.	Bir List<Employee> oluşturun ve çalışanların maaşlarına göre sıralanmış bir liste döndürün.
+            * 	2.	Bir List<Employee> içindeki tüm çalışanları departmanlarına göre gruplamak için Stream API kullanın.
+            * 	3.	Bir Map<String, Integer>’deki tüm çift değerleri filtreleyip yeni bir Map döndürün.
+            * 	4.	Bir List<String>’i alfabeye göre sıralayın ve sadece ilk 3 elemanı alın (limit kullanarak).
+            * 	5.	Bir List<Integer> içindeki elemanları küçükten büyüğe sıralayın ve ardından 5’ten büyük olanları yazdırın.
+            * 	6.	Bir Stream ile Fibonacci dizisi oluşturan bir kod yazın.
+            * 	7.	Bir List<Integer> içindeki elemanların frekansını hesaplayarak bir Map oluşturun.
+            * 	8.	Bir List<String> içinde uzunlukları aynı olan kelimeleri bir grupta toplayın.
+            * 	9.	Bir Stream kullanarak belirli bir koşula göre (örneğin, belirli bir harf içeren kelimeler) bir listeyi iki alt listeye ayırın (partitioningBy kullanarak).
+            * 	10.	Sonsuz bir Stream oluşturun (Stream.generate kullanarak) ve belirli bir koşula göre bu akışı sınırlandırıp elemanları yazdırın.
+            *
+            *
+            *
          * ** THREAD
          *
          */
