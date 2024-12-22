@@ -94,11 +94,12 @@ public class Donguler {
             System.out.println(i + "nci sayının karesi "+  i*i);
         }
         // SORU 1
+        // TODO: Bu sorunun cevabına bakalım.
         System.out.println("Lütfen bir sayı girin ");
-        int sayı=sc.nextInt();
-        for(int i=1;i<sayi;i++)
+        int aSayi=sc.nextInt();
+        for(int i=1;i<aSayi;i++)
         {
-            if(!(sayi%i==0))
+            if(!(aSayi%i==0))
             {
                 System.out.println(i +" Sayısı asaldır ");
             }
