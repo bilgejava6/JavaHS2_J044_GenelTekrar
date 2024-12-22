@@ -1,6 +1,7 @@
 package com.gonca.oop.zor;
 
 public class Ru3  {
+    // TODO: Bu cevap olmamış, Factory Design Pattern i anlatmıştım ona bakıp tekrar çözümleyelim.
     private YINTERFACE yinterface;
     public Ru3(YINTERFACE yinterface) {
         this.yinterface = yinterface;
