@@ -89,7 +89,6 @@ public class Runner_Kararyapilari_Orta {
         }
     }
     private static void cevap7(int sayi) {
-
         int a = 0, b = 1;
         System.out.print(a + " " + b + " ");
 
