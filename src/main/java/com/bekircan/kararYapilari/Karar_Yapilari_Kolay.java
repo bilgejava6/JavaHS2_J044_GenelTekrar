@@ -103,10 +103,10 @@ public class Karar_Yapilari_Kolay {
         String soru6 = scanner.nextLine().toLowerCase();
 
         switch (soru6){
-            case "cumartesi": case "pazar":
+            case "cumartesi", "pazar":
                     System.out.println("Hafta sonu");
                     break;
-            case "pazartesi": case "salı": case "çarşamba": case "perşembe": case "cuma":
+            case "pazartesi", "salı", "çarşamba", "perşembe", "cuma":
                 System.out.println("Hafta içi");
                 break;
             default:
