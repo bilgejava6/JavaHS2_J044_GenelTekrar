@@ -114,17 +114,31 @@ public class Runner_Orta {
         }
     }
 
-//    public static void cevap7(){
-//
-//    }
+    public static void cevap7(){
 
-//    public static void cevap8(){
-//        Scanner sc=new Scanner(System.in);
-//        System.out.println("Bir günadı giriniz :");
-//        String gunAdi=sc.nextLine().toLowerCase().trim();
-//        switch (gunAdi){
-//            case "pazartesi":
-//                System.out.println("");
-//        }
-//    }
+    }
+
+    public static void cevap8(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Bir günadı giriniz :");
+        String gunAdi=sc.nextLine().toLowerCase().trim();
+        switch (gunAdi){
+            case "pazartesi":
+                System.out.println(gunAdi+": Yeni bir haftaya başlıyoruz"); break;
+            case "salı":
+                System.out.println(gunAdi+": haftanın ikinci günüdür.");
+            case "çarşamba":
+                System.out.println(gunAdi+": haftanın ortası ");
+            case "perşembe":
+                System.out.println(gunAdi+": hafta bitimine yaklaştık.");
+            case "cuma":
+                System.out.println(gunAdi+": tatil için son gün ");
+            case "cumartesi":
+                System.out.println(gunAdi+": dinlenme zamanı");
+            case "pazar":
+                System.out.println(gunAdi+": haftanın son günü");
+            default:
+                System.out.println("Geçersiz bir gün adı girdiniz.");
+        }
+    }
 }
