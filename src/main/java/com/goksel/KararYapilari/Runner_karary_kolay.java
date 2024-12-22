@@ -113,6 +113,7 @@ public class Runner_karary_kolay {
 
         System.out.print("Bir rakam girin (0-9): ");
         int rakam = input.nextInt();
+        // TODO: String ifade = switch(VALUE) 0 -> "zero";
         switch (rakam) {
             case 0:
                 System.out.println("zero");
@@ -174,6 +175,7 @@ public class Runner_karary_kolay {
         System.out.print("Bir ay numarası girin (1-12): ");
         int ay = input.nextInt();
         switch (ay) {
+            // case 1,3,5,7,8,10,12
             case 1:
             case 3:
             case 5:

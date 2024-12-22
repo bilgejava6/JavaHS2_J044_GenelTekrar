@@ -56,6 +56,7 @@ public class Runner_Kararypilari_Kolay {
         }
     }
     private static void cevap6(){
+        // TODO: hantal oluyor if kullanarak switch..case daha doğru
         Scanner sc = new Scanner(System.in);
         System.out.println("Gün giriniz : ");
         String gun = sc.nextLine();
