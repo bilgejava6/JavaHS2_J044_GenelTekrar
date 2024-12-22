@@ -80,7 +80,7 @@ class Mains {
         int toplam = Matematik.toplama(5, 10);
         int carpim = Matematik.carpma(4, 6);
 
-        System.out.println("Toplama Sonucu: " + toplam); // 15
-        System.out.println("Çarpma Sonucu: " + carpim); // 24
+        System.out.println("Toplama Sonucu: " + toplam);
+        System.out.println("Çarpma Sonucu: " + carpim);
     }
 }
