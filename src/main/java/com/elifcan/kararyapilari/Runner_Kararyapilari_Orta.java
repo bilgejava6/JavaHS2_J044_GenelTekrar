@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Runner_Kararyapilari_Orta {
     public static void main(String[] args) {
-        cevap7(5);
+        cevap7(8);
     }
     private static void cevap1(int sayi1, int sayi2) {
         if(sayi1 > sayi2) {
@@ -90,13 +90,13 @@ public class Runner_Kararyapilari_Orta {
     }
     private static void cevap7(int sayi) {
         int a = 0, b = 1;
-        System.out.print(a + " " + b + " ");
-
-        for (int i = 2; i < sayi; ++i) {
+        for (int i = 2; i < sayi+2; ++i) {
             int c = a + b;
-            System.out.print(c + " ");
             a = b;
             b = c;
+            if(sayi == c){
+                System.out.println("vardır");
+            }
         }
     }
     private static void cevap8(String gun) {
