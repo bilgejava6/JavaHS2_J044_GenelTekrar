@@ -1,5 +1,8 @@
 package com.sercan.Donguler;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Runner_Orta {
     public static void main(String[] args) {
         /*** Orta
@@ -17,6 +20,28 @@ public class Runner_Orta {
          */
     }
     public static void cevap1(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Bir sayı giriniz : ");
+        int sayi=sc.nextInt();
+
+
 
     }
+
+    // 0 1 1 2 3 5 8 13 21 34 55
+    public static void cevap2(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Bir sayı giriniz : ");
+        int sayi=sc.nextInt();
+        int ilk=0,ikinci=1;
+
+        for (int i=0;i<=sayi;i++){
+            int sonraki=ilk+ikinci;
+            System.out.println(sonraki);
+
+        }
+
+    }
+
+
 }
