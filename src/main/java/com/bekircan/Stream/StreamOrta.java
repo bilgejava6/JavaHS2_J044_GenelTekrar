@@ -3,6 +3,8 @@ package com.bekircan.Stream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  *  1.	Bir List<String> içindeki elemanları Stream kullanarak uzunluklarına göre sıralayın ve yazdırın.
@@ -27,20 +29,29 @@ public class StreamOrta {
                 .sorted((a,b)-> Integer.compare(a.length(),b.length())).forEach(System.out::println);
 
         ///Bir List<Integer>’deki benzersiz elemanları distinct kullanarak yazdırın.
+        /// distinct(), bir Stream üzerindeki tekrar eden elemanları filtreleyerek yalnızca benzersiz (unique) elemanları döndürür.
         System.out.println("*** 2. Soru ***");
-        List<Integer> sayilar =Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        List<Integer> sayilar =Arrays.asList(1,2,2,4,6,6,6,8,9,10);
 
         sayilar.stream().distinct().forEach(System.out::println);
 
-        ///
+        /// Bir List<String>’de belirli bir uzunluktan (örneğin, 5 karakter) uzun olan elemanları filtreleyin.
         System.out.println("*** 3. Soru ***");
+        List<String> soru3kelime1 = Arrays.asList("Java", "Stream", "Orta", "BilgeAdam","BekirCan");
+        soru3kelime1.stream().filter(kelime->kelime.length()>5).forEach(System.out::println);
 
-
-
-        ///
+        /// Bir Stream’den Map oluşturmak için collect(Collectors.toMap()) kullanarak bir kod yazın.
         System.out.println("*** 4. Soru ***");
+
+        Map<String, Integer> kelimeUzunluklari = soru3kelime1.stream().collect(Collectors.toMap(
+                        kelime -> kelime,
+                        kelime -> kelime.length()));
+        kelimeUzunluklari.forEach((anahtar,deger)-> System.out.println("Kelime "+ anahtar + ", uzunluk " + deger));
+
         ///
         System.out.println("*** 5. Soru ***");
+
+
         ///
         System.out.println("*** 6. Soru ***");
         ///
