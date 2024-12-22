@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 
 public class RunnerStreamAPIKolay {
     public static void main(String[] args) {
-        cevap4();
+        cevap10();
     }
     static void cevap1(){
         List<Integer> numbers = new ArrayList<>();
@@ -119,9 +119,9 @@ public class RunnerStreamAPIKolay {
 
         Integer min = numbers.stream()
                 .min(Integer::compareTo)
-                .orElse(null); // Liste boşsa null döner
+                .orElse(null);
 
-        System.out.println("En küçük sayı: " + min);
+        System.out.println("En ucuk sayı: " + min);
     }
 
 }
