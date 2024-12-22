@@ -25,7 +25,9 @@ public class Kolay {
         soru6();
         soru7();
         soru8();
-        
+        soru9();
+        soru10();
+
 
 
     }
@@ -77,7 +79,13 @@ public class Kolay {
     }
 
     public static void soru7() {
-            // TODO: bunu diğer arkaşlarını çözümlerine bakarak çözelim.
+        String metin ="Deneme";
+        if (metin.isEmpty()) {
+            System.out.println("String boştur");
+        }else {
+            System.out.println("String boş değil ");
+        }
+
     }
 
     public static void soru8() {
@@ -88,5 +96,24 @@ public class Kolay {
 
     }
 
-// TODO: eksik sorularu çözelim.
+    public static void soru9() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir metin giriniz..:");
+        String kelimeee = scanner.nextLine();
+        if (kelimeee.contains("a")) {
+            System.out.println("A harfi var");
+        }else
+            System.out.println("A harfi yok");
+
+
+    }
+
+    public static void soru10() {
+        String a ="Hello";
+        String b ="World";
+        System.out.println(a.concat(b));
+
+    }
+
+
 }
