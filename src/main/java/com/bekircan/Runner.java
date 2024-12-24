@@ -179,12 +179,78 @@ package com.bekircan;
  7.	İç içe geçmiş static ve non-static sınıfların farklarını gösteren bir program yazın.
  8.	Bir sınıfta method chaining kullanarak ardışık metot çağrımlarını mümkün kılan bir yapı oluşturun.
  10.	Bir sınıfta generics kullanarak, farklı türlerde çalışan bir metot tanımlayın (örneğin, bir listeyi sıralayan metot).
-
  *
  * ** COLLECTIONS
- *
+ *          * Collections - Kolay
+ *             * 	1.	Bir ArrayList oluşturun ve içine 5 adet sayı ekleyip konsola yazdırın.
+ *             * 	2.	Bir HashSet oluşturun ve içine birkaç aynı değeri ekleyin. HashSet’in tekrar eden değerleri kabul edip etmediğini gözlemleyin.
+ *             * 	3.	Bir LinkedList oluşturun ve bu listeye eleman ekleyip çıkararak listeyi yazdırın.
+ *             * 	4.	Bir TreeSet kullanarak elemanların doğal sıralamasını kontrol edin.
+ *             * 	5.	Bir HashMap oluşturun ve içine anahtar-değer çiftleri ekleyip yazdırın.
+ *             * 	6.	Bir PriorityQueue oluşturun ve elemanları ekledikten sonra sırayla çıkartarak yazdırın.
+ *             * 	7.	Bir ArrayList’in boyutunu öğrenmek için hangi metodu kullanacağınızı gösterin.
+ *             * 	8.	Bir HashSet içinde bir elemanın var olup olmadığını kontrol eden bir program yazın.
+ *             * 	9.	Bir HashMap’te bir anahtarın değeri nasıl güncellenir? Örnekle açıklayın.
+ *             * 	10.	Bir LinkedList’te bir elemanın başa ve sona eklenmesini sağlayan metotları kullanarak bir örnek yazın.
+ *             *
+ *             * Collections - Orta
+ *             * 	1.	Bir HashMap’te tüm anahtarları ve değerleri döngü ile yazdıran bir program yazın.
+ *             * 	2.	Bir ArrayList’i sıralamak için Collections.sort() yöntemini kullanın.
+ *             * 	3.	Bir TreeMap kullanarak anahtarların doğal sıralandığını gözlemleyin.
+ *             * 	4.	Bir LinkedList’i bir kuyruk (queue) gibi kullanarak eleman ekleme ve çıkarma işlemleri yapın.
+ *             * 	5.	Bir HashSet ile ArrayList arasındaki farkları örneklerle açıklayın.
+ *             * 	6.	Bir PriorityQueue kullanarak elemanları öncelik sırasına göre yazdıran bir program yazın.
+ *             * 	7.	Bir HashMap içinde belirli bir anahtarın veya değerin olup olmadığını kontrol eden bir kod yazın.
+ *             * 	8.	Bir ArrayList içindeki tekrarlayan elemanları bir HashSet kullanarak kaldırın.
+ *             * 	9.	Bir TreeSet kullanarak bir dizi sayıyı sıralayın ve sıralamanın nasıl çalıştığını açıklayın.
+ *             * 	10.	Bir LinkedHashMap kullanarak ekleme sırasının korunduğunu gösteren bir program yazın.
+ *             *
+ *             * Collections - Zor
+ *             * 	1.	Bir TreeMap oluşturun ve sıralama düzenini tersine çevirmek için bir Comparator kullanın.
+ *             * 	2.	Bir HashMap’i değerlerine göre sıralayıp sonucu yazdıran bir program yazın.
+ *             * 	3.	Bir LinkedList’i bir yığın (stack) gibi kullanarak eleman ekleme ve çıkarma işlemleri yapın.
+ *             * 	4.	Bir ArrayList’i bir HashSet’e ve daha sonra tekrar bir ArrayList’e dönüştüren bir program yazın.
+ *             * 	6.	Bir PriorityQueue oluşturun ve özelleştirilmiş bir sıralama düzeni için bir Comparator kullanın.
+ *             * 	7.	Bir HashMap ve TreeMap arasındaki performans farklarını analiz etmek için bir zaman ölçüm programı yazın.
+ *             * 	9.	Bir Deque (çift taraflı kuyruk) kullanarak elemanların hem baştan hem sondan eklenip çıkarılmasını sağlayan bir program yazın.
+ *             * 	10.	Bir ArrayDeque kullanarak bir kelimeyi tersine çeviren bir program yazın.
  * ** STREAM API
- *
+ *            * Stream API - Kolay
+ *             * 	1.	Bir List<Integer> oluşturun ve forEach kullanarak tüm elemanları yazdırın.
+ *             * 	2.	Bir List<String>’i Stream API ile alfabetik olarak sıralayıp yazdırın.
+ *             * 	3.	Bir List<Integer>’deki tüm elemanların karesini hesaplayan bir Stream işlemi yazın.
+ *             * 	4.	Bir List<String> içinde belirli bir kelimenin (örneğin, “Java”) var olup olmadığını kontrol edin.
+ *             * 	5.	Bir List<Integer>’deki yalnızca çift sayıları filtreleyip yazdıran bir kod yazın.
+ *             * 	6.	Bir List<Integer>’deki elemanların toplamını Stream API kullanarak hesaplayın.
+ *             * 	7.	Bir List<String> içindeki tüm elemanları büyük harfe çevirip yazdıran bir Stream işlemi yazın.
+ *             * 	8.	Bir Stream kullanarak belirli bir aralıkta (örneğin, 1 ile 10 arasında) bir sayı listesi oluşturun.
+ *             * 	9.	Bir List<String> içindeki boş olmayan elemanları filtreleyip yazdırın.
+ *             * 	10.	Bir List<Integer> içindeki en küçük sayıyı Stream API kullanarak bulun.
+ *             *
+ *             * Stream API - Orta
+ *             * 	1.	Bir List<String> içindeki elemanları Stream kullanarak uzunluklarına göre sıralayın ve yazdırın.
+ *             * 	2.	Bir List<Integer>’deki benzersiz elemanları distinct kullanarak yazdırın.
+ *             * 	3.	Bir List<String>’de belirli bir uzunluktan (örneğin, 5 karakter) uzun olan elemanları filtreleyin.
+ *             * 	4.	Bir Stream’den Map oluşturmak için collect(Collectors.toMap()) kullanarak bir kod yazın.
+ *             * 	5.	Bir List<Integer> içindeki elemanların ortalamasını Stream API ile hesaplayın.
+ *             * 	6.	Bir List<String>’deki elemanları birleştirip (concatenate) tek bir String oluşturun (Collectors.joining kullanarak).
+ *             * 	7.	Bir List<Integer> içindeki tüm elemanların çarpımını reduce kullanarak hesaplayın.
+ *             * 	8.	Bir Map<String, Integer>’deki anahtarları Stream olarak elde edin ve yazdırın.
+ *             * 	9.	Bir List<Integer>’deki elemanları önce filtreleyip (örneğin, çift sayılar), sonra sıralayın ve yazdırın.
+ *             * 	10.	Bir List<String> içindeki elemanları gruplamak için Collectors.groupingBy kullanın (örneğin, eleman uzunluğuna göre).
+ *             *
+ *             * Stream API - Zor
+ *             * 	1.	Bir List<Employee> oluşturun ve çalışanların maaşlarına göre sıralanmış bir liste döndürün.
+ *             * 	2.	Bir List<Employee> içindeki tüm çalışanları departmanlarına göre gruplamak için Stream API kullanın.
+ *             * 	3.	Bir Map<String, Integer>’deki tüm çift değerleri filtreleyip yeni bir Map döndürün.
+ *             * 	4.	Bir List<String>’i alfabeye göre sıralayın ve sadece ilk 3 elemanı alın (limit kullanarak).
+ *             * 	5.	Bir List<Integer> içindeki elemanları küçükten büyüğe sıralayın ve ardından 5’ten büyük olanları yazdırın.
+ *             * 	6.	Bir Stream ile Fibonacci dizisi oluşturan bir kod yazın.
+ *             * 	7.	Bir List<Integer> içindeki elemanların frekansını hesaplayarak bir Map oluşturun.
+ *             * 	8.	Bir List<String> içinde uzunlukları aynı olan kelimeleri bir grupta toplayın.
+ *             * 	9.	Bir Stream kullanarak belirli bir koşula göre (örneğin, belirli bir harf içeren kelimeler) bir listeyi iki alt listeye ayırın (partitioningBy kullanarak).
+ *             * 	10.	Sonsuz bir Stream oluşturun (Stream.generate kullanarak) ve belirli bir koşula göre bu akışı sınırlandırıp elemanları yazdırın.
+
  * ** THREAD
  *
  */

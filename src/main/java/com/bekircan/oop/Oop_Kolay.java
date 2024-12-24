@@ -23,19 +23,19 @@ public class Oop_Kolay {
         kisi.soyad = "Yumrutepe";
         kisi.selamVer();
 
-        System.out.println("\n*** 2. Soru ***");
+        System.out.println("*** 2. Soru ***");
         kisi.setIl("Ankara");
         kisi.setIlce("Eryaman");
         kisi.adres();
 
-        System.out.println("\n*** 3. Soru ***");
+        System.out.println("*** 3. Soru ***");
         System.out.println("Ülke: " + Kisi.ulke);
         kisi.hangiUlke();
 
-        System.out.println("\n*** 4. Soru ***");
+        System.out.println("*** 4. Soru ***");
         kisi.soru4();
 
-        System.out.println("\n*** 5. Soru: Constructor Overloading ***");
+        System.out.println("*** 5. Soru: Constructor Overloading ***");
         // Varsayılan constructor
         Kisi kisi1 = new Kisi();
         kisi1.kisiBilgisi();
@@ -52,25 +52,25 @@ public class Oop_Kolay {
         Kisi kisi4 = new Kisi("Bekir Can", "Yumrutepe", 30);
         kisi4.kisiBilgisi();
 
-        System.out.println("\n*** 6. Soru: this Anahtar Kelimesi ***");
+        System.out.println("*** 6. Soru: this Anahtar Kelimesi ***");
         Kisi kisi5 = new Kisi("Ahmet", "Kaya", 25);
         kisi5.yazdir();
 
         kisi5.guncelle("Mehmet", "Yılmaz", 40);
         kisi5.yazdir();
 
-        System.out.println("\n*** 7. Soru: toString Metodunu Override Etme ***");
+        System.out.println("*** 7. Soru: toString Metodunu Override Etme ***");
         System.out.println(kisi5);
 
-        System.out.println("\n*** 8. Soru: New Anahtar Kelimesi ile Sınıf Nesnesi Oluşturma ***");
+        System.out.println("*** 8. Soru: New Anahtar Kelimesi ile Sınıf Nesnesi Oluşturma ***");
         Kisi kisi6 = new Kisi("Ayşe", "Kara", 20);
         System.out.println("Yeni oluşturulan nesne bilgileri: " + kisi6);
 
-        System.out.println("\n*** 9. Soru: Metot Overloading ***");
+        System.out.println("*** 9. Soru: Metot Overloading ***");
         kisi5.metotOverload();
         kisi5.metotOverload("Overloading örneği");
 
-        System.out.println("\n*** 10. Soru: Default Constructor ***");
+        System.out.println("*** 10. Soru: Default Constructor ***");
         Kisi kisi7 = new Kisi(); // Varsayılan constructor kullanıldı
         kisi7.kisiBilgisi();
     }
