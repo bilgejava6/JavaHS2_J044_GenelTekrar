@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Runner_Stringler_Orta {
     public static void main(String[] args) {
-        System.out.println(cevap8());
+        System.out.println(cevap10("merhaba nasılsın?"));
 
     }
     private static String cevap1(String state){
@@ -56,5 +56,18 @@ public class Runner_Stringler_Orta {
                 count++;
         }
         return count;
+    }
+    private static String cevap10(String statement){
+        String [] states = statement.split(" ");
+        String [] newStates = new String[states.length];
+        String newState = "";
+        for(int i = 0 ; i < states.length ; i++){
+            newStates[i] = states[i].substring(0,1).toUpperCase()
+                    + states[i].substring(1,states[i].length());
+        }
+        for(int i = 0 ; i < newStates.length ; i++){
+            newState += newStates[i] + " ";
+        }
+        return newState.trim();
     }
 }
