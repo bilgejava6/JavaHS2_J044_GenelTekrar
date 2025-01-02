@@ -17,7 +17,7 @@ public class Runner_Orta {
          * 	10.	Bir LinkedHashMap kullanarak ekleme sırasının korunduğunu gösteren bir program yazın.
          *
          */
-        cevap3();
+        cevap7();
     }
     public static void cevap1(){
         HashMap<Integer,String> hashMap=new HashMap<>();
@@ -51,6 +51,83 @@ public class Runner_Orta {
         treeMap.put(3,"Deniz");
         System.out.println(treeMap);
 
+
+    }
+
+    public static void cevap4(){
+
+    }
+
+    public static void cevap5(){
+        HashSet<String> hashSet=new HashSet<>();
+        hashSet.add("Ahmet");
+        hashSet.add("Volkan");
+        hashSet.add("Zeynep");
+        hashSet.add("Irmak");
+        hashSet.add("Deniz");
+        hashSet.add("Volkan");
+        hashSet.add("Zeynep");
+        System.out.println(hashSet);
+
+        ArrayList<String> arrayList=  new ArrayList<>();
+        arrayList.add("Ahmet");
+        arrayList.add("Volkan");
+        arrayList.add("Zeynep");
+        arrayList.add("Irmak");
+        arrayList.add("Deniz");
+        arrayList.add("Volkan");
+        arrayList.add("Zeynep");
+        System.out.println(arrayList);
+
+
+    }
+
+    public static void cevap6(){
+
+    }
+
+    public static void cevap7(){
+        HashMap<Integer,String> hashMap=new HashMap<>();
+        hashMap.put(1,"Ahmet");
+        hashMap.put(2,"Volkan");
+        hashMap.put(3,"Zeynep");
+        hashMap.put(4,"Irmak");
+        hashMap.put(5,"Deniz");
+        int key=2;
+        if (hashMap.containsKey(key)){
+            System.out.println(hashMap.get(key));
+        }else {
+            System.out.println("Bulunamadı");
+        }
+        String value="Ahmet";
+        if (hashMap.containsValue(value)){
+            System.out.println(value+" değeri mevcut.");
+
+
+        }else {
+            System.out.println("Bulunamadı");
+        }
+    }
+
+    public static void cevap8(){
+        ArrayList<Integer> arrayList=  new ArrayList<>();
+        arrayList.add(5);
+        arrayList.add(15);
+        arrayList.add(25);
+        arrayList.add(35);
+        arrayList.add(15);
+        arrayList.add(5);
+        arrayList.add(1055);
+        arrayList.add(445);
+        arrayList.add(1055);
+
+        System.out.println(arrayList);
+        HashSet<Integer>hashSet=new HashSet<>(arrayList);
+        System.out.println(hashSet);
+
+    }
+
+    public static void cevap9(){
 
     }
 

@@ -17,7 +17,7 @@ public class Runner_Zor {
          * 	9.	Bir değişken tanımlayın ve bu değişkene += gibi bir işlem uygulayın. İşlemin sonucunu konsola yazdırın.
          * 	10.	Kullanıcıdan bir String ve bir sayı isteyin. Bu ikisini birleştirerek bir cümle oluşturun ve ekrana yazdırın.
          * 	,*/
-
+cevap10();
 
     }
 
@@ -40,6 +40,9 @@ public class Runner_Zor {
 
     public static void cevap3(){
         // TODO: Bunu yapalım.
+        final int sayi=20;
+        //sayi=25;
+        // final değişkenler sabit olur değiştirilemezler.
     }
 
     public static void cevap4(){
@@ -72,9 +75,43 @@ public class Runner_Zor {
 
     }
 
+    public static void cevap7(){
+        int sayi=5;
+        String sayi2=String.valueOf(sayi);
+        System.out.println(sayi2);
+        String sayi3=Integer.toString(sayi);
+        System.out.println(sayi3);
+
+    }
+
+    public static void cevap9(){
+        int sayi=10;
+        sayi+=5;
+        System.out.println(sayi );
+    }
+
+    public static void cevap10(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Lütfen bir kelime giriniz : ");
+        String kelime=sc.nextLine();
+        System.out.println("Lütfen bir sayi giriniz :");
+        int sayi=sc.nextInt();
+        System.out.println(kelime+"  "+sayi);
+
+    }
+
 
 }
 
+class Cevap8{
+    public static void main(String[] args) {
+        sayi2=15;
+        // sayi3=
+
+    }
+    static int sayi2=12;
+    int sayi3=5;
+}
 
 class Sinif{
     private int intDeger;
